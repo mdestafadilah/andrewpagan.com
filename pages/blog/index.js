@@ -1,11 +1,5 @@
-import Button from "../../components/Button";
-
 const Blog = () => {
-	return (
-		<div>
-			<Button label="hello"></Button>
-		</div>
-	);
+	return <div>Blog :)</div>;
 };
 
 export default Blog;
