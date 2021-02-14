@@ -1,0 +1,23 @@
+$main-color: #454545;
+$secondary-color: #a1a1a1;
+$mint-color: #42cc9c;
+$mint-secondary-color: #00b087;
+$asap-bold: 700;
+$asap-medium: 600;
+$asap-regular: 400;
+
+$mobile-break: 740px;
+$desktop-break: 1278px;
+
+:export {
+    main-color: $main-color;
+    secondary-color: $secondary-color;
+    mint-color: $mint-color;
+    mint-secondary-color: $mint-secondary-color;
+    asap-bold: $asap-bold;
+    asap-medium: $asap-medium;
+    asap-regular: $asap-regular;
+
+    mobile-break: $mobile-break;
+    desktop-break: $desktop-break;
+}
