@@ -1,18 +1,18 @@
 import ResumeData from "../public/resume.json";
 
+import styles from "./Resume.module.scss";
+
 const Education = ({ education }) => {
 	return (
-		<div className="section">
-			<div className="section-header">Education</div>
-			<div className="section-info">
-				<div className="section-info-header">
+		<div className={styles.section}>
+			<div className={styles["section-header"]}>Education</div>
+			<div className={styles["section-info"]}>
+				<div className={styles["section-info-header"]}>
 					<h3>{education.degree}</h3>
 					<h4>{education.college}</h4>
 				</div>
 				<div className="section-info-dates">
-					<span>
-						{education.startDate} - {education.endDate}
-					</span>
+					{education.startDate} - {education.endDate}
 				</div>
 			</div>
 		</div>
@@ -21,34 +21,34 @@ const Education = ({ education }) => {
 
 const Experience = ({ experience }) => {
 	return (
-		<>
-			<div className="section-info-header">
-				<h3>{experience.company}</h3>
-				<h4>{experience.title}</h4>
+		<div className={styles.experience}>
+			<div className={styles["section-info-header"]}>
+				<h3 className={styles.company}>{experience.company}</h3>
+				<h4 className={styles.title}>{experience.title}</h4>
 			</div>
-			<div className="section-info-dates">
-				<span>
-					{experience.startDate} - {experience.endDate}
-				</span>
+			<div className={styles["section-info-dates"]}>
+				{experience.startDate} - {experience.endDate}
 			</div>
-			<ul className="section-info-points">
+			<ul className={styles["section-info-points"]}>
 				{experience.responsibilities.map((point, index) => (
-					<li key={index}>{point}</li>
+					<li className={styles.info} key={index}>
+						{point}
+					</li>
 				))}
 			</ul>
-		</>
+		</div>
 	);
 };
 
 const Resume = () => {
 	return (
-		<div className="information">
-			<div className="p-rel">
-				<div className="vertical-line"></div>
+		<div className={styles.information}>
+			<div className={styles["p-rel"]}>
+				<div className={styles["vertical-line"]}></div>
 				<Education education={ResumeData.education}></Education>
-				<div className="section">
-					<div className="section-header">Experience</div>
-					<div className="section-info">
+				<div className={styles.section}>
+					<div className={styles["section-header"]}>Experience</div>
+					<div className={styles["section-info"]}>
 						{ResumeData.experience.map((job, index) => (
 							<Experience
 								key={index}
@@ -57,11 +57,13 @@ const Resume = () => {
 						))}
 					</div>
 				</div>
-				<div className="section">
-					<div className="section-header">Skills</div>
-					<div className="section-info">
-						<div className="overview-container">
-							<h3 className="overview-header">Languages</h3>
+				<div className={styles.section}>
+					<div className={styles["section-header"]}>Skills</div>
+					<div className={styles["section-info"]}>
+						<div className={styles["overview-container"]}>
+							<h3 className={styles["overview-header"]}>
+								Languages
+							</h3>
 							<ul>
 								<li>React</li>
 								<li>Redux</li>
@@ -71,8 +73,8 @@ const Resume = () => {
 								<li>Python</li>
 							</ul>
 						</div>
-						<div className="overview-container">
-							<h3 className="overview-header">Tools</h3>
+						<div className={styles["overview-container"]}>
+							<h3 className={styles["overview-header"]}>Tools</h3>
 							<ul>
 								<li>Bootstrap</li>
 								<li>Tableau</li>

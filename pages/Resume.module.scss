@@ -9,6 +9,12 @@
 			position: relative;
 		}
 
+		.experience {
+			&:not(:first-child) {
+				margin-top: 16px;
+			}
+		}
+
 		.section {
 			margin-bottom: 32px;
 
@@ -30,11 +36,11 @@
 
 					display: inline-block;
 
-					h3 {
+					.degree {
 						font-size: 18px;
 					}
 
-					h4 {
+					.college {
 						color: $secondary-color;
 						font-size: 16px;
 					}
@@ -50,7 +56,7 @@
 					margin-top: 16px;
 					margin-left: 16px;
 
-					li {
+					.info {
 						line-height: 1.41;
 
 						&:not(:first-child) {
@@ -105,6 +111,12 @@
 			position: relative;
 		}
 
+		.experience {
+			&:not(:first-child) {
+				margin-top: 16px;
+			}
+		}
+
 		.section {
 			margin-bottom: 32px;
 
@@ -126,11 +138,11 @@
 
 					display: inline-block;
 
-					h3 {
+					.company {
 						font-size: 18px;
 					}
 
-					h4 {
+					.title {
 						color: $secondary-color;
 						font-size: 16px;
 					}
@@ -200,6 +212,12 @@
 
 		.p-rel {
 			position: relative;
+		}
+
+		.experience {
+			&:not(:first-child) {
+				margin-top: 16px;
+			}
 		}
 
 		.section {
