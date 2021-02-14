@@ -1,7 +1,8 @@
 import Head from "next/head";
 
-import Footer from "./Footer";
 import Navigation from "./Navigation";
+import Resume from "./Resume";
+import Footer from "./Footer";
 
 export default function Home() {
 	return (
@@ -12,7 +13,7 @@ export default function Home() {
 			</Head>
 
 			<Navigation></Navigation>
-
+			<Resume></Resume>
 			<Footer></Footer>
 		</>
 	);

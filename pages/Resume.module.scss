@@ -1,0 +1,282 @@
+@import "../variables";
+
+@media screen and (min-width: $desktop-break) {
+	.information {
+		width: 1017px;
+		margin: 0 auto;
+
+		.p-rel {
+			position: relative;
+		}
+
+		.section {
+			margin-bottom: 32px;
+
+			.section-header {
+				width: 20%;
+				display: inline-block;
+				font-size: 20px;
+				vertical-align: top;
+			}
+
+			.section-info {
+				width: 79%;
+				display: inline-block;
+
+				.section-info-header {
+					&:not(:first-child) {
+						margin-top: 16px;
+					}
+
+					display: inline-block;
+
+					h3 {
+						font-size: 18px;
+					}
+
+					h4 {
+						color: $secondary-color;
+						font-size: 16px;
+					}
+				}
+
+				.section-info-dates {
+					font-size: 16px;
+					float: right;
+					display: inline-block;
+				}
+
+				.section-info-points {
+					margin-top: 16px;
+					margin-left: 16px;
+
+					li {
+						line-height: 1.41;
+
+						&:not(:first-child) {
+							margin-top: 3px;
+						}
+					}
+				}
+
+				.overview-container {
+					display: inline-block;
+					float: left;
+					width: 20%;
+
+					&:not(:last-child) {
+						margin-right: 62px;
+					}
+
+					.overview-header {
+						font-size: 18px;
+						margin-bottom: 3px;
+					}
+
+					ul {
+						list-style: none;
+						columns: 2;
+						-webkit-columns: 2;
+						-moz-columns: 2;
+
+						li {
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+
+		.vertical-line {
+			position: absolute;
+			left: 18%;
+			background: $mint-color;
+			width: 2px;
+			height: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
+	.information {
+		margin: 0 122px;
+
+		.p-rel {
+			position: relative;
+		}
+
+		.section {
+			margin-bottom: 32px;
+
+			.section-header {
+				width: 20%;
+				display: inline-block;
+				font-size: 20px;
+				vertical-align: top;
+			}
+
+			.section-info {
+				width: 79%;
+				display: inline-block;
+
+				.section-info-header {
+					&:not(:first-child) {
+						margin-top: 16px;
+					}
+
+					display: inline-block;
+
+					h3 {
+						font-size: 18px;
+					}
+
+					h4 {
+						color: $secondary-color;
+						font-size: 16px;
+					}
+				}
+
+				.section-info-dates {
+					font-size: 16px;
+					float: right;
+					display: inline-block;
+				}
+
+				.section-info-points {
+					margin-top: 16px;
+					margin-left: 16px;
+
+					li {
+						line-height: 1.41;
+
+						&:not(:first-child) {
+							margin-top: 3px;
+						}
+					}
+				}
+
+				.overview-container {
+					display: inline-block;
+					float: left;
+					width: 180px;
+
+					&:not(:last-child) {
+						margin-right: 62px;
+					}
+
+					.overview-header {
+						font-size: 18px;
+						margin-bottom: 3px;
+					}
+
+					ul {
+						width: 180px;
+						list-style: none;
+						columns: 2;
+						-webkit-columns: 2;
+						-moz-columns: 2;
+
+						li {
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+
+		.vertical-line {
+			position: absolute;
+			left: 18%;
+			background: $mint-color;
+			width: 2px;
+			height: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-break) {
+	.information {
+		margin: 0 12px;
+
+		.p-rel {
+			position: relative;
+		}
+
+		.section {
+			margin-bottom: 32px;
+
+			.section-header {
+				display: block;
+				margin-bottom: 12px;
+				font-size: 20px;
+				vertical-align: top;
+			}
+
+			.section-info {
+				display: inline-block;
+
+				.section-info-header {
+					&:not(:first-child) {
+						margin-top: 16px;
+					}
+
+					display: inline-block;
+
+					h3 {
+						font-size: 18px;
+					}
+
+					h4 {
+						color: $secondary-color;
+						font-size: 16px;
+					}
+				}
+
+				.section-info-dates {
+					font-size: 16px;
+					margin-top: 4px;
+					display: block;
+				}
+
+				.section-info-points {
+					margin-top: 16px;
+					margin-left: 16px;
+
+					li {
+						line-height: 1.41;
+
+						&:not(:first-child) {
+							margin-top: 3px;
+						}
+					}
+				}
+
+				.overview-container {
+					display: block;
+					margin-bottom: 8px;
+
+					.overview-header {
+						font-size: 18px;
+						margin-bottom: 3px;
+					}
+
+					ul {
+						width: 180px;
+						list-style: none;
+						columns: 2;
+						-webkit-columns: 2;
+						-moz-columns: 2;
+
+						li {
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+
+		.vertical-line {
+			display: none;
+		}
+	}
+}
