@@ -1,0 +1,20 @@
+{
+	"social-media": [
+		{
+			"name": "Github",
+			"url": "https://github.com/drewkiimon"
+		},
+		{
+			"name": "Leetcode",
+			"url": "https://leetcode.com/drewbie/"
+		},
+		{
+			"name": "LinkedIn",
+			"url": "https://www.linkedin.com/in/andrewpagan/"
+		},
+		{
+			"name": "SoundCloud",
+			"url": "https://soundcloud.com/drewkiimon"
+		}
+	]
+}

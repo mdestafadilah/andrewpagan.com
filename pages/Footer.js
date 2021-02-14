@@ -1,10 +1,32 @@
 import styles from "./Footer.module.scss";
+import socialMedia from "../public/social-media";
+import { FaGithubSquare } from "react-icons/fa";
+import { SiLinkedin, SiLeetcode } from "react-icons/si";
+import { ImSoundcloud2 } from "react-icons/im";
 
-const ListItem = ({ url, icon }) => {
+const ListItem = ({ url, name }) => {
+	const iconPicker = () => {
+		switch (name) {
+			case "Github":
+				return <FaGithubSquare />;
+			case "LinkedIn":
+				return <SiLinkedin />;
+			case "Leetcode":
+				return <SiLeetcode />;
+			case "SoundCloud":
+				return <ImSoundcloud2 />;
+		}
+	};
+
 	return (
 		<li className={styles.item}>
-			<a href={url} target="_blank" rel="noopener noreferrer">
-				<i className={icon}></i>
+			<a
+				className={styles.link}
+				href={url}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{iconPicker()}
 			</a>
 		</li>
 	);
@@ -29,18 +51,13 @@ const Footer = () => {
 			</div>
 			<div className={styles["social-media-links"]}>
 				<ul className={styles["link-holder"]}>
-					<ListItem
-						url="https://github.com/drewkiimon"
-						icon="fa fa-github"
-					/>
-					<ListItem
-						url="https://www.linkedin.com/in/andrewpagan/"
-						icon="fa fa-linkedin"
-					/>
-					<ListItem
-						url="https://soundcloud.com/drewkiimon"
-						icon="fa fa-soundcloud"
-					/>
+					{socialMedia["social-media"].map((media) => (
+						<ListItem
+							key={media.name}
+							url={media.url}
+							name={media.name}
+						></ListItem>
+					))}
 				</ul>
 			</div>
 		</footer>
