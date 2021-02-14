@@ -40,7 +40,10 @@ const Footer = () => {
 				<div className={styles.chat}>
 					<span>
 						Let's chat. --
-						<a href="mailto:andrew.r.pagan@gmail.com">
+						<a
+							className={styles.link}
+							href="mailto:andrew.r.pagan@gmail.com"
+						>
 							andrew.r.pagan@gmail.com
 						</a>
 					</span>

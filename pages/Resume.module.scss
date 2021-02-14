@@ -48,7 +48,6 @@
 
 				.section-info-dates {
 					font-size: 16px;
-					float: right;
 					display: inline-block;
 				}
 
@@ -67,7 +66,6 @@
 
 				.overview-container {
 					display: inline-block;
-					float: left;
 					width: 20%;
 
 					&:not(:last-child) {
@@ -138,11 +136,11 @@
 
 					display: inline-block;
 
-					.company {
+					h3 {
 						font-size: 18px;
 					}
 
-					.title {
+					h4 {
 						color: $secondary-color;
 						font-size: 16px;
 					}

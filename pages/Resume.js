@@ -11,7 +11,7 @@ const Education = ({ education }) => {
 					<h3>{education.degree}</h3>
 					<h4>{education.college}</h4>
 				</div>
-				<div className="section-info-dates">
+				<div className={styles["section-info-dates"]}>
 					{education.startDate} - {education.endDate}
 				</div>
 			</div>

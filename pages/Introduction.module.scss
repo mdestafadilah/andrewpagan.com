@@ -1,0 +1,75 @@
+@import "../variables";
+
+@media screen and (min-width: $desktop-break) {
+	.header {
+		width: 1017px;
+		margin: 108px auto;
+
+		h1 {
+			font-size: 48px;
+		}
+	}
+
+	.about-me {
+		width: 1017px;
+		margin: 0 auto 32px auto;
+
+		h2 {
+			font-size: 26px;
+			font-weight: $asap-medium;
+			margin-bottom: 8px;
+		}
+
+		p {
+			line-height: 1.41;
+		}
+	}
+}
+
+@media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
+	.header {
+		margin: 108px 122px;
+
+		h1 {
+			font-size: 48px;
+		}
+	}
+
+	.about-me {
+		margin: 0 122px 32px 122px;
+
+		h2 {
+			font-size: 26px;
+			font-weight: $asap-medium;
+			margin-bottom: 8px;
+		}
+
+		p {
+			line-height: 1.41;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-break) {
+	.header {
+		margin: 108px 12px;
+
+		h1 {
+			font-size: 48px;
+		}
+	}
+
+	.about-me {
+		margin: 0 12px 32px 12px;
+
+		h2 {
+			font-size: 26px;
+			font-weight: $asap-medium;
+			margin-bottom: 8px;
+		}
+
+		p {
+			line-height: 1.41;
+		}
+	}
+}
