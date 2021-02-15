@@ -2,6 +2,7 @@ import styles from "./Footer.module.scss";
 import socialMedia from "../public/social-media";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiLinkedin, SiLeetcode } from "react-icons/si";
+import { GrStackOverflow } from "react-icons/gr";
 import { ImSoundcloud2 } from "react-icons/im";
 
 const ListItem = ({ url, name }) => {
@@ -13,6 +14,8 @@ const ListItem = ({ url, name }) => {
 				return <SiLinkedin />;
 			case "Leetcode":
 				return <SiLeetcode />;
+			case "StackOverflow":
+				return <GrStackOverflow />;
 			case "SoundCloud":
 				return <ImSoundcloud2 />;
 		}
