@@ -134,8 +134,7 @@
 
 @media screen and (max-width: $mobile-break) {
 	.footer {
-		height: 250px;
-		position: relative;
+		height: 282px;
 		color: white;
 		background: $main-color;
 		padding: 75px 12px 40px 12px;
@@ -170,13 +169,8 @@
 		}
 
 		.social-media-links {
-			position: absolute;
-			bottom: 65px;
-			right: 40px;
-
 			.link-holder {
 				list-style: none;
-				float: right;
 
 				.item {
 					width: 32px;
