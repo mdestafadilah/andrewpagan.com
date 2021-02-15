@@ -1,190 +1,59 @@
 @import "../variables";
 
-@media screen and (min-width: $desktop-break) {
-	.footer {
-		height: 250px;
-		color: white;
-		background: $main-color;
-		padding: 75px 122px 40px 122px;
+.footer {
+	height: 282px;
+	color: white;
+	background: $main-color;
+	padding: 75px 12px 40px 12px;
+	text-align: center;
 
-		.details {
-			display: inline-block;
-			width: 50%;
-			height: 100%;
+	.details {
+		display: block;
 
-			.name {
-				display: block;
-				font-size: 24px;
-				font-weight: $asap-medium;
-				margin-bottom: 5px;
-			}
-
-			.chat {
-				display: block;
-			}
-
-			.link {
-				color: $mint-secondary-color;
-				text-decoration: none;
-			}
-
-			.copyright {
-				font-size: 14px;
-				margin-top: 40px;
-
-				span {
-					vertical-align: bottom;
-				}
-			}
-		}
-
-		.social-media-links {
-			display: inline-block;
-			float: right;
-			width: 50%;
-
-			.link-holder {
-				list-style: none;
-				float: right;
-
-				.item {
-					width: 32px;
-					height: 32px;
-					font-size: 32px;
-					display: inline-block;
-
-					.link {
-						color: white;
-					}
-
-					&:not(:last-child) {
-						margin-right: 32px;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-	.footer {
-		height: 250px;
-		color: white;
-		background: $main-color;
-		padding: 75px 122px 40px 122px;
-
-		.details {
-			display: inline-block;
-			width: 50%;
-			height: 100%;
-
-			.name {
-				display: block;
-				font-size: 24px;
-				font-weight: $asap-medium;
-				margin-bottom: 5px;
-			}
-
-			.chat {
-				display: block;
-			}
-
-			.link {
-				color: $mint-secondary-color;
-				text-decoration: none;
-			}
-
-			.copyright {
-				font-size: 14px;
-				margin-top: 40px;
-
-				span {
-					vertical-align: bottom;
-				}
-			}
-		}
-
-		.social-media-links {
-			display: inline-block;
-			float: right;
-			width: 50%;
-
-			.link-holder {
-				list-style: none;
-				float: right;
-
-				.item {
-					width: 32px;
-					height: 32px;
-					display: inline-block;
-					font-size: 32px;
-
-					.link {
-						color: white;
-					}
-
-					&:not(:last-child) {
-						margin-right: 32px;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $mobile-break) {
-	.footer {
-		height: 282px;
-		color: white;
-		background: $main-color;
-		padding: 75px 12px 40px 12px;
-
-		.details {
+		.name {
 			display: block;
-
-			.name {
-				display: block;
-				font-size: 24px;
-				font-weight: $asap-medium;
-				margin-bottom: 5px;
-			}
-
-			.chat {
-				display: block;
-			}
-
-			.link {
-				color: $mint-secondary-color;
-				text-decoration: none;
-			}
-
-			.copyright {
-				font-size: 14px;
-				margin-top: 40px;
-
-				span {
-					vertical-align: bottom;
-				}
-			}
+			font-size: 24px;
+			font-weight: $asap-medium;
+			margin-bottom: 5px;
 		}
 
-		.social-media-links {
-			.link-holder {
-				list-style: none;
+		.chat {
+			display: block;
+		}
 
-				.item {
-					width: 32px;
-					height: 32px;
-					display: inline-block;
-					font-size: 32px;
+		.link {
+			color: $mint-secondary-color;
+			text-decoration: none;
+		}
 
-					.link {
-						color: white;
-					}
+		.copyright {
+			font-size: 14px;
+			margin-top: 40px;
 
-					&:not(:last-child) {
-						margin-right: 32px;
-					}
+			span {
+				vertical-align: bottom;
+			}
+		}
+	}
+
+	.social-media-links {
+		padding-top: 32px;
+
+		.link-holder {
+			list-style: none;
+
+			.item {
+				width: 32px;
+				height: 32px;
+				display: inline-block;
+				font-size: 32px;
+
+				.link {
+					color: white;
+				}
+
+				&:not(:last-child) {
+					margin-right: 32px;
 				}
 			}
 		}
