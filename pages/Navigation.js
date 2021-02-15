@@ -1,12 +1,12 @@
 import styles from "./Navigation.module.scss";
-const logo = "../AP.png";
+const LOGO = "../images/AP.png";
 
 const Navigation = () => {
 	return (
 		<nav className={styles.navigation}>
 			<img
 				className={styles.icon}
-				src={logo}
+				src={LOGO}
 				height="72"
 				width="72"
 				alt="Andrew Pagan the Third logo"

@@ -24,7 +24,7 @@ export default function Home() {
 					content="width=device-width, initial-scale=1.0"
 				/>
 				<title>Andrew Pagan</title>
-				<link rel="canonical" href="http://andrewpagan.me" />
+				<link rel="canonical" href="http://www.andrewpagan.com" />
 				<html lang="en" />
 			</Head>
 
