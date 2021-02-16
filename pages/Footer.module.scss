@@ -1,7 +1,7 @@
 @import "../variables";
 
 .footer {
-	height: 282px;
+	height: $footer-height;
 	color: white;
 	background: $main-color;
 	padding: 75px 12px 40px 12px;

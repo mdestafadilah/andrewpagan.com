@@ -1,5 +1,9 @@
 @import "../variables";
 
+.navigation {
+	height: $navbar-height;
+}
+
 @media screen and (min-width: $desktop-break) {
 	.navigation {
 		width: 1017px;

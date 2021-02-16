@@ -9,15 +9,21 @@ $asap-regular: 400;
 $mobile-break: 740px;
 $desktop-break: 1278px;
 
-:export {
-    main-color: $main-color;
-    secondary-color: $secondary-color;
-    mint-color: $mint-color;
-    mint-secondary-color: $mint-secondary-color;
-    asap-bold: $asap-bold;
-    asap-medium: $asap-medium;
-    asap-regular: $asap-regular;
+$navbar-height: 100px;
+$footer-height: 282px;
 
-    mobile-break: $mobile-break;
-    desktop-break: $desktop-break;
+:export {
+	main-color: $main-color;
+	secondary-color: $secondary-color;
+	mint-color: $mint-color;
+	mint-secondary-color: $mint-secondary-color;
+	asap-bold: $asap-bold;
+	asap-medium: $asap-medium;
+	asap-regular: $asap-regular;
+
+	mobile-break: $mobile-break;
+	desktop-break: $desktop-break;
+
+	navbar-height: $navbar-height;
+	footer-height: $footer-height;
 }
