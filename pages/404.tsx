@@ -14,14 +14,21 @@ const getRandomInt = (max: number) => {
 
 interface Gif {
 	id: number;
+	images: {
+		downsized: {
+			url: string;
+		};
+	};
 }
+
+interface GifState extends Array<Gif> {}
 
 interface GifState {}
 
 const fourOhFour = () => {
 	const MAX_GIPHY_SEARCH = 4999;
 
-	const [gifs, setGifs] = useState<Gif>([]);
+	const [gifs, setGifs] = useState<GifState>([]);
 	const [offset, setOffset] = useState(0);
 
 	useEffect(() => {
