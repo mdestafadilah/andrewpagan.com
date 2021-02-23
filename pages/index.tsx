@@ -1,9 +1,7 @@
 import Head from "next/head";
 
 import Introduction from "./Introduction";
-import Navigation from "../components/Layouts/Navigation/Navigation";
 import Resume from "./Resume";
-import Footer from "../components/Layouts/Footer/Footer";
 
 export default function Home() {
 	return (
@@ -28,11 +26,8 @@ export default function Home() {
 				<html lang="en" />
 			</Head>
 
-			<Navigation></Navigation>
-
 			<Introduction></Introduction>
 			<Resume></Resume>
-			<Footer></Footer>
 		</>
 	);
 }
