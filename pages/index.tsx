@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 import Introduction from "./Introduction";
-import Navigation from "./Navigation";
+import Navigation from "../components/Layouts/Navigation/Navigation";
 import Resume from "./Resume";
-import Footer from "./Footer";
+import Footer from "../components/Layouts/Footer/Footer";
 
 export default function Home() {
 	return (

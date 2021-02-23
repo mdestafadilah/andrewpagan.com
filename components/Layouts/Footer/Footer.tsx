@@ -1,11 +1,17 @@
 import styles from "./Footer.module.scss";
-import socialMedia from "./../public/social-media.json";
+import socialMedia from "../../../public/social-media.json";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiLinkedin, SiLeetcode } from "react-icons/si";
 import { GrStackOverflow } from "react-icons/gr";
 import { ImSoundcloud2 } from "react-icons/im";
+import React, { ReactElement } from "react";
 
-const ListItem = ({ url, name }) => {
+interface ListItemProp {
+	url: string;
+	name: string;
+}
+
+const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
 	const iconPicker = () => {
 		switch (name) {
 			case "Github":
