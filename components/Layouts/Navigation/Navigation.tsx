@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import styles from "./Navigation.module.scss";
 import Link from "next/link";
@@ -10,9 +9,8 @@ const Navigation = () => {
 	return (
 		<nav className={styles.navigation}>
 			<Link href="/">
-				<Image
+				<img
 					className={styles.icon}
-					layout="intrinsic"
 					src={LOGO}
 					height="72"
 					width="72"
