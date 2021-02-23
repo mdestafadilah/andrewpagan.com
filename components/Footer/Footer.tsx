@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss";
-import socialMedia from "../public/social-media";
+import socialMedia from "./../public/social-media.json";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiLinkedin, SiLeetcode } from "react-icons/si";
 import { GrStackOverflow } from "react-icons/gr";

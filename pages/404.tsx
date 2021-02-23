@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const { NEXT_PUBLIC_GIPHY_API_KEY } = process.env;
 import styles from "./404.module.scss";
 
-const getRandomInt = (max) => {
+const getRandomInt = (max: number) => {
 	return Math.floor(Math.random() * Math.floor(max));
 };
 
