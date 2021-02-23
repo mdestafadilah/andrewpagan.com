@@ -12,10 +12,16 @@ const getRandomInt = (max: number) => {
 	return Math.floor(Math.random() * Math.floor(max));
 };
 
+interface Gif {
+	id: number;
+}
+
+interface GifState {}
+
 const fourOhFour = () => {
 	const MAX_GIPHY_SEARCH = 4999;
 
-	const [gifs, setGifs] = useState([]);
+	const [gifs, setGifs] = useState<Gif>([]);
 	const [offset, setOffset] = useState(0);
 
 	useEffect(() => {

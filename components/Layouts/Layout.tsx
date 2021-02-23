@@ -2,7 +2,11 @@ import React from "react";
 import Footer from "./Footer/Footer";
 import Navigation from "./Navigation/Navigation";
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+	children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
 	return (
 		<>
 			<Navigation></Navigation>

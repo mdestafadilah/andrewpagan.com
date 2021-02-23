@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const LOGO = "/images/AP.png";
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
 	return (
 		<nav className={styles.navigation}>
 			<Link href="/">

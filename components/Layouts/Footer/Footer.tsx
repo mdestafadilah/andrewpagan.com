@@ -11,7 +11,7 @@ interface ListItemProp {
 	name: string;
 }
 
-const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
+const ListItem = ({ url, name }: ListItemProp) => {
 	const iconPicker = () => {
 		switch (name) {
 			case "Github":
