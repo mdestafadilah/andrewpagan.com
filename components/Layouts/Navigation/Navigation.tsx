@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./Navigation.module.scss";
 import Link from "next/link";
 
-const LOGO = "../images/AP.png";
+const LOGO = "/images/AP.png";
 
 const Navigation: React.FC = () => {
 	return (
