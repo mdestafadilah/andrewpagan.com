@@ -2,9 +2,6 @@ import Axios from "axios";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 
-import Navigation from "../components/Layouts/Navigation/Navigation";
-import Footer from "../components/Layouts/Footer/Footer";
-
 const { NEXT_PUBLIC_GIPHY_API_KEY } = process.env;
 import styles from "./404.module.scss";
 
@@ -62,7 +59,6 @@ const fourOhFour = () => {
 			<Head>
 				<title>404 - you okay?</title>
 			</Head>
-			<Navigation />
 
 			<div className={styles["gif-holder"]}>
 				{gifs.map((gif) => (
@@ -73,8 +69,6 @@ const fourOhFour = () => {
 					/>
 				))}
 			</div>
-
-			<Footer />
 		</>
 	);
 };
