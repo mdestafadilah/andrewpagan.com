@@ -1,8 +1,20 @@
+import React from "react";
 import ResumeData from "../public/resume.json";
 
 import styles from "./Resume.module.scss";
 
-const Education = ({ education }) => {
+interface Education {
+	college: string;
+	degree: string;
+	startDate: string;
+	endDate: string;
+}
+
+interface EducationProps {
+	education: Education;
+}
+
+const Education = ({ education }: EducationProps) => {
 	return (
 		<div className={styles.section}>
 			<div className={styles["section-header"]}>Education</div>
@@ -19,7 +31,19 @@ const Education = ({ education }) => {
 	);
 };
 
-const Experience = ({ experience }) => {
+interface Experience {
+	company: string;
+	title: string;
+	startDate: string;
+	endDate: string;
+	responsibilities: string[];
+}
+
+interface ExperienceProps {
+	experience: Experience;
+}
+
+const Experience = ({ experience }: ExperienceProps) => {
 	return (
 		<div className={styles.experience}>
 			<div className={styles["section-info-header"]}>
