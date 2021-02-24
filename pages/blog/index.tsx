@@ -1,5 +1,10 @@
 import Head from "next/head";
-import { attributes, react as HomeContent } from "../../content/home.md";
+import { attributes, react as HomeContent } from "./../../content/home.md";
+
+interface Cat {
+	name: string;
+	description: string;
+}
 
 const Blog = () => {
 	let { title, cats } = attributes;
@@ -13,8 +18,8 @@ const Blog = () => {
 				<h1>{title}</h1>
 				<HomeContent />
 				<ul>
-					{cats.map((cat, k) => (
-						<li key={k}>
+					{cats.map((cat: Cat, index: number) => (
+						<li key={index}>
 							<h2>{cat.name}</h2>
 							<p>{cat.description}</p>
 						</li>
