@@ -31,7 +31,7 @@ const index = ({ posts }: Posts) => {
 					<li key={post.filePath}>
 						<Link
 							as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
-							href={`/blog/[title]`}
+							href={`/blog/[slug]`}
 						>
 							<a>{post.data.title}</a>
 						</Link>
