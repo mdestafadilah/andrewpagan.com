@@ -4,9 +4,23 @@ import path from "path";
 import matter from "gray-matter";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
-interface Props {}
+interface PostData {
+	author: string;
+	description: string;
+	title: string;
+}
+interface Post {
+	content: string;
+	data: PostData;
+	filePath: string;
+}
 
-const index = ({ posts }: Props) => {
+interface Posts {
+	posts: Post[];
+}
+
+const index = ({ posts }: Posts) => {
+	console.log(posts);
 	console.log("what am i", posts);
 	return (
 		<div>
