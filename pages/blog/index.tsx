@@ -8,17 +8,17 @@ const index = (props: Props) => {
 
 export default index;
 
-export async function getStaticProps() {
-	const allPosts = getAllPosts([
-		"title",
-		"date",
-		"slug",
-		"author",
-		"coverImage",
-		"excerpt",
-	]);
+// export async function getStaticProps() {
+// 	const allPosts = getAllPosts([
+// 		"title",
+// 		"date",
+// 		"slug",
+// 		"author",
+// 		"coverImage",
+// 		"excerpt",
+// 	]);
 
-	return {
-		props: { allPosts },
-	};
-}
+// 	return {
+// 		props: { allPosts },
+// 	};
+// }

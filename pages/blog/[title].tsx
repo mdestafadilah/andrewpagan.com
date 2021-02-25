@@ -2,16 +2,25 @@
 
 import React from "react";
 import { useRouter } from "next/router";
+import { MDXProvider } from "@mdx-js/react";
+
+import MDXDocument, { metadata } from "./test.mdx";
+
+console.log(metadata);
+console.log(MDXDocument);
+
+const components = {
+	h1: (props) => <h1 style={{ color: "tomato" }} {...props} />,
+};
 
 const BlogPost: React.FC = () => {
 	const router = useRouter();
 	const { title } = router.query;
 
 	return (
-		<div>
-			<h1>{title}</h1>
-			<button onClick={() => router.push("/")}>Back to home?</button>
-		</div>
+		<MDXProvider components={components}>
+			<MDXDocument />
+		</MDXProvider>
 	);
 };
 
