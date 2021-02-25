@@ -21,11 +21,15 @@ const BlogPost: React.FC = () => {
 
 	useEffect(() => {
 		const getFile = async () => {
-			if (title) {
-				let file = await import(`./../../_blog-posts/${title}.mdx`);
-
-				setComponent(file.default);
-				setMetadata(file.metadata);
+			try {
+				if (title) {
+					let file = await import(`./../../_blog-posts/${title}.mdx`);
+					console.log(file);
+					setComponent(file.default);
+					setMetadata(file.metadata);
+				}
+			} catch (err) {
+				router.push("/blog");
 			}
 		};
 
