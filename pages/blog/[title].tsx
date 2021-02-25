@@ -18,14 +18,16 @@ const BlogPost: React.FC = () => {
 	const router = useRouter();
 	const { title } = router.query;
 
-	const [Component, setComponent] = useState(Placeholder);
+	const [Component, setComponent] = useState<React.FC>(Placeholder);
+	const [metadata, setMetadata] = useState<any>("");
 
 	useEffect(() => {
 		const getFile = async () => {
 			let file = await import(`./../../_blog-posts/${title}.mdx`);
 
-			console.log("fileee", file.metadata, file.default);
+			// console.log("fileee", file.metadata, file.default);
 			setComponent(file.default);
+			setMetadata(file.metadata);
 		};
 
 		getFile();
