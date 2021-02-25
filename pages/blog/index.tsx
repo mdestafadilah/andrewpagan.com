@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
+import Link from "next/link";
 
 interface PostData {
 	author: string;
@@ -28,7 +29,12 @@ const index = ({ posts }: Posts) => {
 			<ul>
 				{posts.map((post) => (
 					<li key={post.filePath}>
-						<h3>{post.data.title}</h3>
+						<Link
+							as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
+							href={`/blog/[title]`}
+						>
+							<a>{post.data.title}</a>
+						</Link>
 					</li>
 				))}
 			</ul>
