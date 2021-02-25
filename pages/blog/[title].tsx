@@ -1,5 +1,3 @@
-// For dynamic routing
-
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { MDXProvider } from "@mdx-js/react";
@@ -11,13 +9,21 @@ const components = {
 const Placeholder: React.FC = () => {
 	return <>Loading</>;
 };
+interface Metadata {
+	title: string;
+	author: string;
+}
+
+interface MetadataState {
+	metadata: Metadata;
+}
 
 const BlogPost: React.FC = () => {
 	const router = useRouter();
 	const { title } = router.query;
 
 	const [Component, setComponent] = useState<React.FC>(Placeholder);
-	const [metadata, setMetadata] = useState<any>("");
+	const [metadata, setMetadata] = useState<MetadataState | null>(null);
 
 	useEffect(() => {
 		const getFile = async () => {
