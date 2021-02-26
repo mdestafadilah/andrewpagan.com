@@ -6,6 +6,7 @@ import renderToString from "next-mdx-remote/render-to-string";
 import Head from "next/head";
 import Link from "next/link";
 import path from "path";
+import React from "react";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
 const components = {
@@ -18,19 +19,14 @@ interface FrontMatter {
 	title: string;
 }
 
-interface Source {
-	compiledSource: string;
-	renderedOutput: string;
-	scope: FrontMatter;
-}
-
 interface Props {
-	source: Source;
+	source: string;
 	frontMatter: FrontMatter;
 }
 
-const BlogPost = ({ source, frontMatter }: Props) => {
-	console.log("AAA source", source);
+const BlogPost: React.FC<Props> = ({ source, frontMatter }) => {
+	// temp bandaid since it's driving me insane
+	// @ts-ignore
 	const content = hydrate(source, { components });
 
 	return (
