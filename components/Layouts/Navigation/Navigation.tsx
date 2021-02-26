@@ -17,6 +17,13 @@ const Navigation = () => {
 					alt="Andrew Pagan the Third logo"
 				/>
 			</Link>
+			<ul>
+				<li>
+					<Link href="/blog">
+						<a className={styles["nav-link"]}>Blog</a>
+					</Link>
+				</li>
+			</ul>
 		</nav>
 	);
 };
