@@ -18,12 +18,19 @@ interface FrontMatter {
 	title: string;
 }
 
+interface Source {
+	compiledSource: string;
+	renderedOutput: string;
+	scope: FrontMatter;
+}
+
 interface Props {
-	source: object;
+	source: Source;
 	frontMatter: FrontMatter;
 }
 
-const BlogPost: React.FC = ({ source, frontMatter }: Props) => {
+const BlogPost = ({ source, frontMatter }: Props) => {
+	console.log("AAA source", source);
 	const content = hydrate(source, { components });
 
 	return (
@@ -45,7 +52,16 @@ const BlogPost: React.FC = ({ source, frontMatter }: Props) => {
 
 export default BlogPost;
 
-export const getStaticProps = async ({ params }) => {
+interface Slug {
+	slug: string;
+}
+
+interface Params {
+	params: Slug;
+}
+
+export const getStaticProps = async ({ params }: Params) => {
+	console.log("AAA params", params);
 	const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
 	const source = fs.readFileSync(postFilePath);
 
