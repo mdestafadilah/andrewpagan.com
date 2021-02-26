@@ -2,7 +2,7 @@ import styles from "./Introduction.module.scss";
 
 const Introduction = () => {
 	return (
-		<div>
+		<>
 			<div className={styles.header}>
 				<h1>Hello, I'm Andrew.</h1>
 				<h1>Thanks for dropping by.</h1>
@@ -24,7 +24,7 @@ const Introduction = () => {
 					and that investing in yourself is invaluable.
 				</p>
 			</div>
-		</div>
+		</>
 	);
 };
 

@@ -57,7 +57,6 @@ interface Params {
 }
 
 export const getStaticProps = async ({ params }: Params) => {
-	console.log("AAA params", params);
 	const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
 	const source = fs.readFileSync(postFilePath);
 
