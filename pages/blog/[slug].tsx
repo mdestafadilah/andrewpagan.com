@@ -12,6 +12,7 @@ import {
 	CustomH2,
 	CustomLink,
 	CustomP,
+	CustomStrong,
 } from "../../components/Blog/BlogMarkdown";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
@@ -20,6 +21,7 @@ const components = {
 	h1: CustomH1,
 	h2: CustomH2,
 	p: CustomP,
+	strong: CustomStrong,
 };
 
 interface FrontMatter {

@@ -40,4 +40,12 @@ const CustomP = ({ children }) => {
 	);
 };
 
-export { CustomLink, CustomH1, CustomH2, CustomP };
+const CustomStrong = ({ children }) => {
+	return (
+		<>
+			<span className={styles["custom-strong"]}>{children}</span>
+		</>
+	);
+};
+
+export { CustomLink, CustomH1, CustomH2, CustomP, CustomStrong };
