@@ -9,6 +9,7 @@ import path from "path";
 import React from "react";
 import {
 	CustomH1,
+	CustomH2,
 	CustomLink,
 	CustomP,
 } from "../../components/Blog/BlogMarkdown";
@@ -17,6 +18,7 @@ import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 const components = {
 	a: CustomLink,
 	h1: CustomH1,
+	h2: CustomH2,
 	p: CustomP,
 };
 

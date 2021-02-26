@@ -24,6 +24,14 @@ const CustomH1 = ({ children }) => {
 	);
 };
 
+const CustomH2 = ({ children }) => {
+	return (
+		<>
+			<h2 className={styles["custom-h2"]}>{children}</h2>
+		</>
+	);
+};
+
 const CustomP = ({ children }) => {
 	return (
 		<>
@@ -32,4 +40,4 @@ const CustomP = ({ children }) => {
 	);
 };
 
-export { CustomLink, CustomH1, CustomP };
+export { CustomLink, CustomH1, CustomH2, CustomP };
