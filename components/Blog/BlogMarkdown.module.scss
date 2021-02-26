@@ -1,0 +1,17 @@
+@import "../../_variables.scss";
+
+.custom-link {
+	color: blue;
+	text-decoration: none;
+}
+
+.custom-h1 {
+	color: red;
+	padding-bottom: 12px;
+}
+
+.custom-p {
+	color: $main-color;
+	padding-bottom: 8px;
+	line-height: 1.5;
+}

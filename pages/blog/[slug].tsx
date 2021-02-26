@@ -7,10 +7,17 @@ import Head from "next/head";
 import Link from "next/link";
 import path from "path";
 import React from "react";
+import {
+	CustomH1,
+	CustomLink,
+	CustomP,
+} from "../../components/Blog/BlogMarkdown";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
 const components = {
-	h1: (props: string) => <h1 style={{ color: "tomato" }} {...props} />,
+	a: CustomLink,
+	h1: CustomH1,
+	p: CustomP,
 };
 
 interface FrontMatter {
