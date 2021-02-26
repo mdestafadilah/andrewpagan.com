@@ -28,7 +28,7 @@
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
 	.header {
-		margin: 108px 122px;
+		margin: 108px 0px;
 
 		h1 {
 			font-size: 48px;
@@ -36,7 +36,7 @@
 	}
 
 	.about-me {
-		margin: 0 122px 32px 122px;
+		margin-bottom: 32px;
 
 		h2 {
 			font-size: 26px;
