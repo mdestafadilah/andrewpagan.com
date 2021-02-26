@@ -16,24 +16,19 @@ const components = {
 	h1: (props: string) => <h1 style={{ color: "tomato" }} {...props} />,
 };
 
-const Placeholder: React.FC = () => {
-	return <>Loading</>;
-};
-interface Metadata {
-	title: string;
+interface FrontMatter {
 	author: string;
+	description: string;
+	title: string;
 }
 
-interface MetadataState {
-	metadata: Metadata;
+interface Props {
+	source: object;
+	frontMatter: FrontMatter;
 }
 
-const BlogPost: React.FC = ({ source, frontMatter }) => {
+const BlogPost: React.FC = ({ source, frontMatter }: Props) => {
 	const content = hydrate(source, { components });
-
-	console.log("AAA content", content);
-	console.log("AAA source", source);
-	console.log("AAA frontMatter", frontMatter);
 
 	return (
 		<div>
@@ -52,10 +47,7 @@ const BlogPost: React.FC = ({ source, frontMatter }) => {
 export default BlogPost;
 
 export const getStaticProps = async ({ params }) => {
-	console.log("What am I", params);
-	console.log("Other AAA", params.slug);
 	const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
-	console.log("AAA postFilePath", postFilePath);
 	const source = fs.readFileSync(postFilePath);
 
 	const { content, data } = matter(source);
@@ -85,7 +77,6 @@ export const getStaticPaths = async () => {
 		// Map the path into the static paths object required by Next.js
 		.map((slug) => ({ params: { slug } }));
 	// How is it reducing it to one?
-	console.log("AAA what is paths", paths);
 	return {
 		paths,
 		fallback: false,
