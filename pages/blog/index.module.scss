@@ -1,0 +1,36 @@
+@import "./../../variables";
+
+.blog {
+	padding-top: 100px;
+	.section-header {
+		width: 20%;
+		display: inline-block;
+		font-size: 20px;
+		vertical-align: top;
+	}
+
+	.section-info {
+		width: 79%;
+		display: inline-block;
+
+		ul {
+			list-style-type: none;
+
+			li {
+				.title {
+					display: block;
+					font-size: 20px;
+					color: $mint-chip-color;
+					text-decoration: none;
+					margin-bottom: 8px;
+				}
+
+				.description {
+					font-size: 16px;
+					margin-bottom: 40px;
+					color: $main-color;
+				}
+			}
+		}
+	}
+}

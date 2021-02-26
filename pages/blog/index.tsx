@@ -6,10 +6,13 @@ import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 import Link from "next/link";
 import Head from "next/head";
 
+import styles from "./index.module.scss";
+
 interface PostData {
 	author: string;
 	description: string;
 	title: string;
+	created: string;
 }
 interface Post {
 	content: string;
@@ -27,20 +30,27 @@ const formatPath = (post: Post) => {
 
 const index = ({ posts }: Posts) => {
 	return (
-		<div>
+		<div className={styles.blog}>
 			<Head>
 				<title>The Blog</title>
 			</Head>
-			<h1>Welcome to my blurg</h1>
-			<ul>
-				{posts.map((post) => (
-					<li key={post.filePath}>
-						<Link as={formatPath(post)} href={`/blog/[slug]`}>
-							<a>{post.data.title}</a>
-						</Link>
-					</li>
-				))}
-			</ul>
+			<div className={styles["section-header"]}>Blog</div>
+			<div className={styles["section-info"]}>
+				<ul>
+					{posts.map((post) => (
+						<li key={post.filePath}>
+							<Link as={formatPath(post)} href={`/blog/[slug]`}>
+								<a className={styles.title}>
+									{post.data.title}
+								</a>
+							</Link>
+							<p className={styles.description}>
+								{post.data.description}
+							</p>
+						</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 };
