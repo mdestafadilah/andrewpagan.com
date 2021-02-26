@@ -2,6 +2,17 @@
 title: Hello World
 author: Andrew Pagan
 description: Let's see if this works
+created: 1614317798474
 ---
 
-# What are we doing
+# Hello World!
+
+Welcome to my first ever blog post on my website! This little blog took me forever to setup. It was my first time every working with MDX (a superset of Markdown), and getting it up and going was just... bizarre. There were a lot of tutorials I found online, but none of them did what I needed them to do. Not until I found [this tutorial on the NextJS Github](https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote).
+
+The great thing about that tutorial is that it's simple, uses a slug (query line parameters pretty much) to dynamically grab my `.mdx` files, and just was exactly what I was looking for. I did as come up with [a dynamic way to get posts](https://www.reddit.com/r/nextjs/comments/lsa5rj/dynamically_importing_mdx_files_in_nextjs_based/), but it ended up not being the best way to do it. Using `getStaticPaths` is the ideal way to get the post **BEFORE** the page actually renders. When I was using `useEffect`, I was getting the page after it already loaded, which is not ideal for the end user.
+
+Here is my original thread where I asked [how to add a blog to my NextJS app](https://www.reddit.com/r/nextjs/comments/lqynxd/how_to_add_a_blog_to_my_nextjs_project/). I was surprised to see that Lee Robinson (a developer for Vercel who created NextJS) reached out. His blog worked more for `.md` (Markdown) files rather than `.mdx`. Still, I was surprised he reached out to help and it definitely let me to find thing the solution I was looking for.
+
+## Now, for some not so NextJS news
+
+I got a _new job_!!! My last day at Reputation.com is March 5th, and a week later (or 11 days exactly) I will be starting at Khan Academy as an Engineer II.
