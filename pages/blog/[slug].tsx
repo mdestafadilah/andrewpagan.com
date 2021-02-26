@@ -6,11 +6,7 @@ import renderToString from "next-mdx-remote/render-to-string";
 import Head from "next/head";
 import Link from "next/link";
 import path from "path";
-import dynamic from "next/dynamic";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
-
-// import { useRouter } from "next/router";
-// import { MDXProvider } from "@mdx-js/react";
 
 const components = {
 	h1: (props: string) => <h1 style={{ color: "tomato" }} {...props} />,
@@ -32,6 +28,9 @@ const BlogPost: React.FC = ({ source, frontMatter }: Props) => {
 
 	return (
 		<div>
+			<Head>
+				<title>{frontMatter.title}</title>
+			</Head>
 			<Link href="/blog">
 				<a>Go back~</a>
 			</Link>

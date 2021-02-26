@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 import Link from "next/link";
+import Head from "next/head";
 
 interface PostData {
 	author: string;
@@ -20,19 +21,21 @@ interface Posts {
 	posts: Post[];
 }
 
+const formatPath = (post: Post) => {
+	return `/blog/${post.filePath.replace(/\.mdx?$/, "")}`;
+};
+
 const index = ({ posts }: Posts) => {
-	console.log(posts);
-	console.log("what am i", posts);
 	return (
 		<div>
+			<Head>
+				<title>The Blog</title>
+			</Head>
 			<h1>Welcome to my blurg</h1>
 			<ul>
 				{posts.map((post) => (
 					<li key={post.filePath}>
-						<Link
-							as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
-							href={`/blog/[slug]`}
-						>
+						<Link as={formatPath(post)} href={`/blog/[slug]`}>
 							<a>{post.data.title}</a>
 						</Link>
 					</li>
