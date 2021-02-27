@@ -17,15 +17,13 @@ interface EducationProps {
 
 const Education = ({ education }: EducationProps) => {
 	return (
-		<div className={styles.section}>
-			<div className={styles["section-info"]}>
-				<div className={styles["section-info-header"]}>
-					<h3>{education.degree}</h3>
-					<h4>{education.college}</h4>
-				</div>
-				<div className={styles["section-info-dates"]}>
-					{education.startDate} - {education.endDate}
-				</div>
+		<div className={styles["section-info"]}>
+			<div className={styles["section-info-header"]}>
+				<h3>{education.degree}</h3>
+				<h4>{education.college}</h4>
+			</div>
+			<div className={styles["section-info-dates"]}>
+				{education.startDate} - {education.endDate}
 			</div>
 		</div>
 	);
@@ -45,7 +43,7 @@ interface ExperienceProps {
 
 const Experience = ({ experience }: ExperienceProps) => {
 	return (
-		<div className={styles.experience}>
+		<div className={styles["section-info"]}>
 			<div className={styles["section-info-header"]}>
 				<h3 className={styles.company}>{experience.company}</h3>
 				<h4 className={styles.title}>{experience.title}</h4>
@@ -66,7 +64,7 @@ const Experience = ({ experience }: ExperienceProps) => {
 
 const Skills = () => {
 	return (
-		<>
+		<div className={styles["section-info"]}>
 			<div className={styles["overview-container"]}>
 				<h3 className={styles["overview-header"]}>Languages</h3>
 				<ul>
@@ -86,7 +84,7 @@ const Skills = () => {
 					<li>LESS/SCSS</li>
 				</ul>
 			</div>
-		</>
+		</div>
 	);
 };
 

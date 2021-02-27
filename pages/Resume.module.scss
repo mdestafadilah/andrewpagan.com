@@ -15,71 +15,68 @@
 			}
 		}
 
-		.section {
+		.section-info {
 			margin-bottom: 32px;
+			width: 79%;
+			display: inline-block;
 
-			.section-info {
-				width: 79%;
+			.section-info-header {
+				&:not(:first-child) {
+					margin-top: 16px;
+				}
+
 				display: inline-block;
 
-				.section-info-header {
-					&:not(:first-child) {
-						margin-top: 16px;
-					}
-
-					display: inline-block;
-
-					h3 {
-						font-size: 18px;
-					}
-
-					h4 {
-						color: $secondary-color;
-						font-size: 16px;
-					}
+				h3 {
+					font-size: 18px;
 				}
 
-				.section-info-dates {
-					float: right;
+				h4 {
+					color: $secondary-color;
 					font-size: 16px;
-					display: inline-block;
+				}
+			}
+
+			.section-info-dates {
+				float: right;
+				font-size: 16px;
+				display: inline-block;
+			}
+
+			.section-info-points {
+				margin-top: 16px;
+				margin-left: 16px;
+
+				.info {
+					line-height: 1.41;
+
+					&:not(:first-child) {
+						margin-top: 3px;
+					}
+				}
+			}
+
+			.overview-container {
+				display: inline-block;
+				width: 20%;
+
+				&:not(:last-child) {
+					margin-right: 62px;
 				}
 
-				.section-info-points {
-					margin-top: 16px;
-					margin-left: 16px;
-
-					.info {
-						line-height: 1.41;
-
-						&:not(:first-child) {
-							margin-top: 3px;
-						}
-					}
+				.overview-header {
+					font-size: 18px;
+					margin-bottom: 3px;
 				}
 
-				.overview-container {
-					display: inline-block;
-					width: 20%;
+				ul {
+					list-style: none;
+					columns: 2;
+					-webkit-columns: 2;
+					-moz-columns: 2;
 
-					&:not(:last-child) {
-						margin-right: 62px;
-					}
-
-					.overview-header {
-						font-size: 18px;
-						margin-bottom: 3px;
-					}
-
-					ul {
-						list-style: none;
-						columns: 2;
-						-webkit-columns: 2;
-						-moz-columns: 2;
-
-						li {
-							width: 50%;
-						}
+					li {
+						width: 50%;
 					}
 				}
 			}
@@ -107,73 +104,72 @@
 			}
 		}
 
-		.section {
-			margin-bottom: 32px;
+		margin-bottom: 32px;
 
-			.section-info {
-				width: 79%;
+		.section-info {
+			margin-bottom: 32px;
+			width: 79%;
+			display: inline-block;
+
+			.section-info-header {
+				&:not(:first-child) {
+					margin-top: 16px;
+				}
+
 				display: inline-block;
 
-				.section-info-header {
-					&:not(:first-child) {
-						margin-top: 16px;
-					}
-
-					display: inline-block;
-
-					h3 {
-						font-size: 18px;
-					}
-
-					h4 {
-						color: $secondary-color;
-						font-size: 16px;
-					}
+				h3 {
+					font-size: 18px;
 				}
 
-				.section-info-dates {
+				h4 {
+					color: $secondary-color;
 					font-size: 16px;
-					float: right;
-					display: inline-block;
+				}
+			}
+
+			.section-info-dates {
+				font-size: 16px;
+				float: right;
+				display: inline-block;
+			}
+
+			.section-info-points {
+				margin-top: 16px;
+				margin-left: 16px;
+
+				li {
+					line-height: 1.41;
+
+					&:not(:first-child) {
+						margin-top: 3px;
+					}
+				}
+			}
+
+			.overview-container {
+				display: inline-block;
+				float: left;
+				width: 180px;
+
+				&:not(:last-child) {
+					margin-right: 62px;
 				}
 
-				.section-info-points {
-					margin-top: 16px;
-					margin-left: 16px;
+				.overview-header {
+					font-size: 18px;
+					margin-bottom: 3px;
+				}
+
+				ul {
+					width: 180px;
+					list-style: none;
+					columns: 2;
+					-webkit-columns: 2;
+					-moz-columns: 2;
 
 					li {
-						line-height: 1.41;
-
-						&:not(:first-child) {
-							margin-top: 3px;
-						}
-					}
-				}
-
-				.overview-container {
-					display: inline-block;
-					float: left;
-					width: 180px;
-
-					&:not(:last-child) {
-						margin-right: 62px;
-					}
-
-					.overview-header {
-						font-size: 18px;
-						margin-bottom: 3px;
-					}
-
-					ul {
-						width: 180px;
-						list-style: none;
-						columns: 2;
-						-webkit-columns: 2;
-						-moz-columns: 2;
-
-						li {
-							width: 50%;
-						}
+						width: 50%;
 					}
 				}
 			}
@@ -203,65 +199,62 @@
 			}
 		}
 
-		.section {
+		.section-info {
 			margin-bottom: 32px;
-
-			.section-info {
-				.section-info-header {
-					&:not(:first-child) {
-						margin-top: 16px;
-					}
-
-					display: inline-block;
-
-					h3 {
-						font-size: 18px;
-					}
-
-					h4 {
-						color: $secondary-color;
-						font-size: 16px;
-					}
-				}
-
-				.section-info-dates {
-					font-size: 16px;
-					margin-top: 4px;
-					display: block;
-				}
-
-				.section-info-points {
+			.section-info-header {
+				&:not(:first-child) {
 					margin-top: 16px;
-					margin-left: 16px;
+				}
+
+				display: inline-block;
+
+				h3 {
+					font-size: 18px;
+				}
+
+				h4 {
+					color: $secondary-color;
+					font-size: 16px;
+				}
+			}
+
+			.section-info-dates {
+				font-size: 16px;
+				margin-top: 4px;
+				display: block;
+			}
+
+			.section-info-points {
+				margin-top: 16px;
+				margin-left: 16px;
+
+				li {
+					line-height: 1.41;
+
+					&:not(:first-child) {
+						margin-top: 3px;
+					}
+				}
+			}
+
+			.overview-container {
+				display: block;
+				margin-bottom: 8px;
+
+				.overview-header {
+					font-size: 18px;
+					margin-bottom: 3px;
+				}
+
+				ul {
+					width: 180px;
+					list-style: none;
+					columns: 2;
+					-webkit-columns: 2;
+					-moz-columns: 2;
 
 					li {
-						line-height: 1.41;
-
-						&:not(:first-child) {
-							margin-top: 3px;
-						}
-					}
-				}
-
-				.overview-container {
-					display: block;
-					margin-bottom: 8px;
-
-					.overview-header {
-						font-size: 18px;
-						margin-bottom: 3px;
-					}
-
-					ul {
-						width: 180px;
-						list-style: none;
-						columns: 2;
-						-webkit-columns: 2;
-						-moz-columns: 2;
-
-						li {
-							width: 50%;
-						}
+						width: 50%;
 					}
 				}
 			}
