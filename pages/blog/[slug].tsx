@@ -55,10 +55,9 @@ const BlogInformation: React.FC<BlogInformationProps> = ({ frontMatter }) => {
 				<a className={styles.crumb}>Blog</a>
 			</Link>
 
-			<p>
+			<p className={styles.title}>
 				<BsArrowReturnRight /> {frontMatter.title}
 			</p>
-
 			<p className={styles.date}>{createdDate}</p>
 		</>
 	);
