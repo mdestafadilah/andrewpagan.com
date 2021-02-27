@@ -18,13 +18,6 @@
 		.section {
 			margin-bottom: 32px;
 
-			.section-header {
-				width: 20%;
-				display: inline-block;
-				font-size: 20px;
-				vertical-align: top;
-			}
-
 			.section-info {
 				width: 79%;
 				display: inline-block;
@@ -116,13 +109,6 @@
 
 		.section {
 			margin-bottom: 32px;
-
-			.section-header {
-				width: 20%;
-				display: inline-block;
-				font-size: 20px;
-				vertical-align: top;
-			}
 
 			.section-info {
 				width: 79%;
@@ -220,16 +206,7 @@
 		.section {
 			margin-bottom: 32px;
 
-			.section-header {
-				display: block;
-				margin-bottom: 12px;
-				font-size: 20px;
-				vertical-align: top;
-			}
-
 			.section-info {
-				display: inline-block;
-
 				.section-info-header {
 					&:not(:first-child) {
 						margin-top: 16px;

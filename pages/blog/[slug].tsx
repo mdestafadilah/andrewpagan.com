@@ -17,7 +17,7 @@ import {
 import styles from "./[slug].module.scss";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 import TwoColumn from "../../components/Layouts/TwoColumn/TwoColumn";
-import { BsArrowReturnRight } from "react-icons/bs";
+import { IoReturnDownForwardSharp } from "react-icons/io5";
 
 const components = {
 	a: CustomLink,
@@ -56,7 +56,7 @@ const BlogInformation: React.FC<BlogInformationProps> = ({ frontMatter }) => {
 			</Link>
 
 			<p className={styles.title}>
-				<BsArrowReturnRight /> {frontMatter.title}
+				<IoReturnDownForwardSharp /> {frontMatter.title}
 			</p>
 			<p className={styles.date}>{createdDate}</p>
 		</>
