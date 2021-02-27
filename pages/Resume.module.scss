@@ -15,8 +15,11 @@
 			}
 		}
 
-		.section-info {
+		.border-bottom {
 			margin-bottom: 32px;
+		}
+
+		.section-info {
 			width: 79%;
 			display: inline-block;
 
@@ -104,10 +107,11 @@
 			}
 		}
 
-		margin-bottom: 32px;
+		.border-bottom {
+			margin-bottom: 32px;
+		}
 
 		.section-info {
-			margin-bottom: 32px;
 			width: 79%;
 			display: inline-block;
 
@@ -199,8 +203,11 @@
 			}
 		}
 
-		.section-info {
+		.border-bottom {
 			margin-bottom: 32px;
+		}
+
+		.section-info {
 			.section-info-header {
 				&:not(:first-child) {
 					margin-top: 16px;

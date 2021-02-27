@@ -43,7 +43,7 @@ interface ExperienceProps {
 
 const Experience = ({ experience }: ExperienceProps) => {
 	return (
-		<div className={styles["section-info"]}>
+		<div className={`${styles["section-info"]} ${styles.experience}`}>
 			<div className={styles["section-info-header"]}>
 				<h3 className={styles.company}>{experience.company}</h3>
 				<h4 className={styles.title}>{experience.title}</h4>
@@ -94,6 +94,7 @@ const Resume = () => {
 			<div className={styles["p-rel"]}>
 				<div className={styles["vertical-line"]}></div>
 				<TwoColumn
+					className={styles["border-bottom"]}
 					leftColumn={<span>Education</span>}
 					rightColumn={
 						<Education education={ResumeData.education}></Education>
@@ -101,6 +102,7 @@ const Resume = () => {
 				/>
 
 				<TwoColumn
+					className={styles["border-bottom"]}
 					leftColumn={<span>Experience</span>}
 					rightColumn={ResumeData.experience.map((job, index) => (
 						<Experience key={index} experience={job}></Experience>
@@ -108,6 +110,7 @@ const Resume = () => {
 				/>
 
 				<TwoColumn
+					className={styles["border-bottom"]}
 					leftColumn={<span>Skills</span>}
 					rightColumn={<Skills />}
 				/>
