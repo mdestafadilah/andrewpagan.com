@@ -8,11 +8,21 @@ const Links: React.FC = () => {
 	const quickLinks = links["quick-links"];
 
 	console.log(quickLinks);
+
 	return (
 		<div className={styles.links}>
 			<ul>
 				{quickLinks.map((link) => (
-					<li key={link.url}>{link.name}</li>
+					<li key={link.url}>
+						<a
+							className={styles.link}
+							href={link.url}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{link.name}
+						</a>
+					</li>
 				))}
 			</ul>
 		</div>
