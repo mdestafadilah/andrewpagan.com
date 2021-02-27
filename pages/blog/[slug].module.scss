@@ -1,15 +1,10 @@
+@import "./../../variables";
+
 .blog-post {
 	padding-top: 100px;
 
-	.section-header {
-		width: 20%;
-		display: inline-block;
-		font-size: 20px;
-		vertical-align: top;
-	}
-
-	.section-info {
-		width: 79%;
-		display: inline-block;
+	.date {
+		color: $secondary-color;
+		font-size: 1rem;
 	}
 }

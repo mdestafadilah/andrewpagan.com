@@ -16,6 +16,7 @@ import {
 } from "../../components/Blog/BlogMarkdown";
 import styles from "./[slug].module.scss";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
+import TwoColumn from "../../components/Layouts/TwoColumn/TwoColumn";
 
 const components = {
 	a: CustomLink,
@@ -32,35 +33,49 @@ interface FrontMatter {
 	created: string;
 }
 
-interface Props {
+interface BlogInformationProps {
+	frontMatter: FrontMatter;
+}
+
+interface BlogPostProps {
 	source: string;
 	frontMatter: FrontMatter;
 }
 
-const BlogPost: React.FC<Props> = ({ source, frontMatter }) => {
-	// temp bandaid since it's driving me insane
-	// @ts-ignore
-	const content = hydrate(source, { components });
-
-	let date = new Date(Number(frontMatter.created)),
+const BlogInformation = ({ frontMatter }: BlogInformationProps) => {
+	const date = new Date(Number(frontMatter.created)),
 		createdDate = `${
 			date.getMonth() + 1
 		}/${date.getDate()}/${date.getFullYear()}`;
+
+	return (
+		<>
+			<Link href="/blog">
+				<a>Blog</a>
+			</Link>
+
+			<p>{frontMatter.title}</p>
+			<p className={styles.date}>{createdDate}</p>
+		</>
+	);
+};
+
+const BlogPost: React.FC = ({ source, frontMatter }: BlogPostProps) => {
+	// temp bandaid since it's driving me insane
+	// @ts-ignore
+	const content = hydrate(source, { components });
 
 	return (
 		<div className={styles["blog-post"]}>
 			<Head>
 				<title>{frontMatter.title}</title>
 			</Head>
-			<div className={styles["section-header"]}>
-				<Link href="/blog">
-					<a>Blog</a>
-				</Link>
-
-				<p>{frontMatter.title}</p>
-				<p>{createdDate}</p>
-			</div>
-			<main className={styles["section-info"]}>{content}</main>
+			<TwoColumn
+				leftColumn={<BlogInformation frontMatter={frontMatter} />}
+				rightColumn={
+					<main className={styles["section-info"]}>{content}</main>
+				}
+			/>
 		</div>
 	);
 };

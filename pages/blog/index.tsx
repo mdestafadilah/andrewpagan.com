@@ -59,7 +59,7 @@ const index = ({ posts }: Posts) => {
 			<TwoColumn
 				leftColumn={<BlogTitle />}
 				rightColumn={<BlogPosts posts={posts} />}
-			></TwoColumn>
+			/>
 		</div>
 	);
 };
