@@ -3,6 +3,10 @@
 .blog-post {
 	padding-top: 100px;
 
+	.crumb {
+		text-decoration: none;
+	}
+
 	.date {
 		color: $secondary-color;
 		font-size: 1rem;

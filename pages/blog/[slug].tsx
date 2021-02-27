@@ -17,6 +17,7 @@ import {
 import styles from "./[slug].module.scss";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 import TwoColumn from "../../components/Layouts/TwoColumn/TwoColumn";
+import { BsArrowReturnRight } from "react-icons/bs";
 
 const components = {
 	a: CustomLink,
@@ -42,7 +43,7 @@ interface BlogPostProps {
 	frontMatter: FrontMatter;
 }
 
-const BlogInformation = ({ frontMatter }: BlogInformationProps) => {
+const BlogInformation: React.FC<BlogInformationProps> = ({ frontMatter }) => {
 	const date = new Date(Number(frontMatter.created)),
 		createdDate = `${
 			date.getMonth() + 1
@@ -51,16 +52,19 @@ const BlogInformation = ({ frontMatter }: BlogInformationProps) => {
 	return (
 		<>
 			<Link href="/blog">
-				<a>Blog</a>
+				<a className={styles.crumb}>Blog</a>
 			</Link>
 
-			<p>{frontMatter.title}</p>
+			<p>
+				<BsArrowReturnRight /> {frontMatter.title}
+			</p>
+
 			<p className={styles.date}>{createdDate}</p>
 		</>
 	);
 };
 
-const BlogPost: React.FC = ({ source, frontMatter }: BlogPostProps) => {
+const BlogPost: React.FC<BlogPostProps> = ({ source, frontMatter }) => {
 	// temp bandaid since it's driving me insane
 	// @ts-ignore
 	const content = hydrate(source, { components });
