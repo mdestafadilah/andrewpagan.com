@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 import Link from "next/link";
 import Head from "next/head";
+import TwoColumn from "./../../components/Layouts/TwoColumn/TwoColumn";
 
 import styles from "./index.module.scss";
 
@@ -28,29 +29,37 @@ const formatPath = (post: Post) => {
 	return `/blog/${post.filePath.replace(/\.mdx?$/, "")}`;
 };
 
-const index = ({ posts }: Posts) => {
+const BlogTitle: React.FC = () => {
+	return <>Blog</>;
+};
+
+const BlogPosts = ({ posts }: Posts) => {
+	return (
+		<ul>
+			{posts.map((post) => (
+				<li key={post.filePath}>
+					<Link as={formatPath(post)} href={`/blog/[slug]`}>
+						<a className={styles.title}>{post.data.title}</a>
+					</Link>
+					<p className={styles.description}>
+						{post.data.description}
+					</p>
+				</li>
+			))}
+		</ul>
+	);
+};
+
+const index: React.FC = ({ posts }: Posts) => {
 	return (
 		<div className={styles.blog}>
 			<Head>
 				<title>The Blog</title>
 			</Head>
-			<div className={styles["section-header"]}>Blog</div>
-			<div className={styles["section-info"]}>
-				<ul>
-					{posts.map((post) => (
-						<li key={post.filePath}>
-							<Link as={formatPath(post)} href={`/blog/[slug]`}>
-								<a className={styles.title}>
-									{post.data.title}
-								</a>
-							</Link>
-							<p className={styles.description}>
-								{post.data.description}
-							</p>
-						</li>
-					))}
-				</ul>
-			</div>
+			<TwoColumn
+				leftColumn={<BlogTitle />}
+				rightColumn={<BlogPosts posts={posts} />}
+			></TwoColumn>
 		</div>
 	);
 };
