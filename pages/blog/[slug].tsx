@@ -14,6 +14,7 @@ import {
 	CustomP,
 	CustomStrong,
 } from "../../components/Blog/BlogMarkdown";
+import styles from "./[slug].module.scss";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
 const components = {
@@ -28,6 +29,7 @@ interface FrontMatter {
 	author: string;
 	description: string;
 	title: string;
+	created: string;
 }
 
 interface Props {
@@ -40,19 +42,23 @@ const BlogPost: React.FC<Props> = ({ source, frontMatter }) => {
 	// @ts-ignore
 	const content = hydrate(source, { components });
 
+	let date = new Date(Number(frontMatter.created)),
+		createdDate = `${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
+
 	return (
-		<div>
+		<div className={styles["blog-post"]}>
 			<Head>
 				<title>{frontMatter.title}</title>
 			</Head>
-			<Link href="/blog">
-				<a>Go back~</a>
-			</Link>
-			<div>
-				<h1>{frontMatter.title}</h1>
-				{frontMatter.description && <p>{frontMatter.description}</p>}
+			<div className={styles["section-header"]}>
+				<Link href="/blog">
+					<a>Blog</a>
+				</Link>
+
+				<p>{frontMatter.title}</p>
+				<p>{createdDate}</p>
 			</div>
-			<main>{content}</main>
+			<main className={styles["section-info"]}>{content}</main>
 		</div>
 	);
 };

@@ -1,17 +1,17 @@
-@import "../../_variables.scss";
+@import "./../../_variables.scss";
 
 .custom-link {
-	color: blue;
+	color: $mint-secondary-color;
 	text-decoration: none;
 }
 
 .custom-h1 {
-	color: red;
+	color: $main-color;
 	padding-bottom: 12px;
 }
 
 .custom-h2 {
-	color: pink;
+	color: $main-color;
 	padding-bottom: 12px;
 }
 
@@ -22,6 +22,6 @@
 }
 
 .custom-strong {
-	color: green;
+	color: $mint-chip-color;
 	font-weight: 700;
 }
