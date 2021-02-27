@@ -50,7 +50,7 @@ const BlogPosts = ({ posts }: Posts) => {
 	);
 };
 
-const index: React.FC = ({ posts }: Posts) => {
+const index = ({ posts }: Posts) => {
 	return (
 		<div className={styles.blog}>
 			<Head>
