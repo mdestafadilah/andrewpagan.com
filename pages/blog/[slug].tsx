@@ -43,7 +43,9 @@ const BlogPost: React.FC<Props> = ({ source, frontMatter }) => {
 	const content = hydrate(source, { components });
 
 	let date = new Date(Number(frontMatter.created)),
-		createdDate = `${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
+		createdDate = `${
+			date.getMonth() + 1
+		}/${date.getDate()}/${date.getFullYear()}`;
 
 	return (
 		<div className={styles["blog-post"]}>
