@@ -6,6 +6,10 @@ interface CustomLinkProps {
 	href: string;
 }
 
+interface ChildrenProps {
+	children: React.ReactNode;
+}
+
 const CustomLink = ({ as, href, ...otherProps }: CustomLinkProps) => {
 	return (
 		<>
@@ -16,7 +20,7 @@ const CustomLink = ({ as, href, ...otherProps }: CustomLinkProps) => {
 	);
 };
 
-const CustomH1 = ({ children }) => {
+const CustomH1 = ({ children }: ChildrenProps) => {
 	return (
 		<>
 			<h1 className={styles["custom-h1"]}>{children}</h1>
@@ -24,7 +28,7 @@ const CustomH1 = ({ children }) => {
 	);
 };
 
-const CustomH2 = ({ children }) => {
+const CustomH2 = ({ children }: ChildrenProps) => {
 	return (
 		<>
 			<h2 className={styles["custom-h2"]}>{children}</h2>
@@ -32,7 +36,7 @@ const CustomH2 = ({ children }) => {
 	);
 };
 
-const CustomP = ({ children }) => {
+const CustomP = ({ children }: ChildrenProps) => {
 	return (
 		<>
 			<p className={styles["custom-p"]}>{children}</p>
@@ -40,7 +44,7 @@ const CustomP = ({ children }) => {
 	);
 };
 
-const CustomStrong = ({ children }) => {
+const CustomStrong = ({ children }: ChildrenProps) => {
 	return (
 		<>
 			<span className={styles["custom-strong"]}>{children}</span>
