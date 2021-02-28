@@ -1,7 +1,7 @@
 import React from "react";
 import { links } from "./../../public/quick-link.json";
 import styles from "./links.module.scss";
-// import Image from "next/image";
+import Image from "next/image";
 import {
 	ImInstagram,
 	ImSoundcloud2,
@@ -10,7 +10,7 @@ import {
 	ImYoutube,
 } from "react-icons/im";
 
-// const profileImage = "/images/andrew-pagan.jpg";
+const profileImage = "/images/square-professional-photo.png";
 
 interface ListItemProp {
 	url: string;
@@ -49,6 +49,9 @@ const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
 const Links: React.FC = () => {
 	return (
 		<div className={styles.links}>
+			<div className={styles["image-holder"]}>
+				<img src={profileImage} />~
+			</div>
 			<ul>
 				{links.map((link) => (
 					<ListItem url={link.url} name={link.name} />
