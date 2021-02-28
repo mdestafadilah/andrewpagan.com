@@ -26,11 +26,43 @@
 		li {
 			@include center;
 			padding: 16px 8px;
+			border-radius: 4px;
 			border: 1px solid $secondary-color;
+			background: white;
 			cursor: pointer;
 
 			svg {
 				margin-right: 8px;
+			}
+
+			&.Twitter {
+				svg {
+					color: #55acee;
+				}
+			}
+
+			&.SoundCloud {
+				svg {
+					color: #ff7700;
+				}
+			}
+
+			&.Instagram {
+				svg {
+					color: #c13584;
+				}
+			}
+
+			&.Youtube {
+				svg {
+					color: #ff0000;
+				}
+			}
+
+			&.Twitch {
+				svg {
+					color: #6441a5;
+				}
 			}
 
 			&:not(:last-child) {
