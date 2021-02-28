@@ -12,6 +12,7 @@ $desktop-break: 1278px;
 
 $navbar-height: 100px;
 $footer-height: 282px;
+$main-height: calc(100vh - #{$navbar-height + $footer-height});
 
 :export {
 	main-color: $main-color;
@@ -28,4 +29,5 @@ $footer-height: 282px;
 
 	navbar-height: $navbar-height;
 	footer-height: $footer-height;
+	main-height: $main-height;
 }

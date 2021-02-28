@@ -1,6 +1,9 @@
 import React from "react";
 import { links } from "./../../public/quick-link.json";
 import styles from "./links.module.scss";
+import Image from "next/image";
+
+const profileImage = "/images/andrew-pagan.jpg";
 
 const Links: React.FC = () => {
 	const openLinkInNewTab = (link: string) => {
