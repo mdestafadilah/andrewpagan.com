@@ -7,7 +7,7 @@ interface LayoutProps {
 	children: React.ReactNode;
 }
 
-const hideNavigationAndFooter = (route) => {
+const hideNavigationAndFooter = (route: string) => {
 	switch (route) {
 		case "/links":
 			return true;
