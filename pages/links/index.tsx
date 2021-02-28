@@ -40,11 +40,7 @@ const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
 	};
 
 	return (
-		<li
-			className={styles.link}
-			key={url}
-			onClick={() => openLinkInNewTab(url)}
-		>
+		<li key={url} onClick={() => openLinkInNewTab(url)}>
 			{iconPicker()} {name}
 		</li>
 	);

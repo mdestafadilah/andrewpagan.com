@@ -1,3 +1,5 @@
+// Default variables
+
 $main-color: #454545;
 $secondary-color: #a1a1a1;
 $mint-color: #42cc9c;
@@ -13,6 +15,13 @@ $desktop-break: 1278px;
 $navbar-height: 100px;
 $footer-height: 282px;
 $main-height: calc(100vh - #{$navbar-height + $footer-height});
+
+// Mixins
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 :export {
 	main-color: $main-color;
@@ -30,4 +39,6 @@ $main-height: calc(100vh - #{$navbar-height + $footer-height});
 	navbar-height: $navbar-height;
 	footer-height: $footer-height;
 	main-height: $main-height;
+
+	center: center;
 }
