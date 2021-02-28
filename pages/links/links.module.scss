@@ -12,11 +12,7 @@
 			padding: 16px 8px;
 			border: 1px solid gray;
 			border-radius: 8px;
-
-			.link {
-				color: $mint-secondary-color;
-				text-decoration: none;
-			}
+			cursor: pointer;
 
 			&:not(:last-child) {
 				margin-bottom: 8px;

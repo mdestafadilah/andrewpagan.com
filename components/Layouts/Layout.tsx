@@ -9,9 +9,9 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
 	return (
 		<>
-			<Navigation></Navigation>
+			<Navigation />
 			<div className={styles.main}>{children}</div>
-			<Footer></Footer>
+			<Footer />
 		</>
 	);
 };
