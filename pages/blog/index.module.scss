@@ -11,8 +11,15 @@
       .title {
         display: block;
         font-size: 20px;
+        font-weight: $asap-bold;
         color: $mint-chip-color;
         text-decoration: none;
+      }
+
+      time {
+        display: block;
+        color: $main-color;
+        font-weight: $asap-medium;
         margin-bottom: 8px;
       }
 

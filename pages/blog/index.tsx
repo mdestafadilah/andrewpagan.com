@@ -34,13 +34,23 @@ const BlogTitle: React.FC = () => {
 };
 
 const BlogPosts = ({ posts }: Posts) => {
+  const sortedPosts = posts.sort(
+    (a: any, b: any) =>
+      new Date(b.data.created).getTime() - new Date(a.data.created).getTime(),
+  );
+
+  const formattedDate = (date: Date) => {
+    return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+  };
+
   return (
     <ul>
-      {posts.map(post => (
+      {sortedPosts.map(post => (
         <li key={post.filePath}>
           <Link as={formatPath(post)} href={`/blog/[slug]`}>
             <a className={styles.title}>{post.data.title}</a>
           </Link>
+          <time>{formattedDate(new Date(post.data.created))}</time>
           <p className={styles.description}>{post.data.description}</p>
         </li>
       ))}
