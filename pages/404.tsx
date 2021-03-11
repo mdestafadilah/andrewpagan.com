@@ -1,21 +1,21 @@
-import Axios from "axios";
-import { useEffect, useState } from "react";
-import Head from "next/head";
+import Axios from 'axios';
+import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
 const { NEXT_PUBLIC_GIPHY_API_KEY } = process.env;
-import styles from "./404.module.scss";
+import styles from './404.module.scss';
 
 const getRandomInt = (max: number) => {
-	return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * Math.floor(max));
 };
 
 interface Gif {
-	id: number;
-	images: {
-		downsized: {
-			url: string;
-		};
-	};
+  id: number;
+  images: {
+    downsized: {
+      url: string;
+    };
+  };
 }
 
 interface GifState extends Array<Gif> {}
@@ -23,54 +23,54 @@ interface GifState extends Array<Gif> {}
 interface GifState {}
 
 const fourOhFour = () => {
-	const MAX_GIPHY_SEARCH = 4999;
+  const MAX_GIPHY_SEARCH = 4999;
 
-	const [gifs, setGifs] = useState<GifState>([]);
-	const [offset, setOffset] = useState(0);
+  const [gifs, setGifs] = useState<GifState>([]);
+  const [offset, setOffset] = useState(0);
 
-	useEffect(() => {
-		const getGif = async () => {
-			try {
-				let {
-					data: { data },
-				} = await Axios.get("https://api.giphy.com/v1/gifs/trending", {
-					params: {
-						api_key: NEXT_PUBLIC_GIPHY_API_KEY,
-						limit: 1,
-						offset: getRandomInt(MAX_GIPHY_SEARCH),
-					},
-				});
+  useEffect(() => {
+    const getGif = async () => {
+      try {
+        let {
+          data: { data },
+        } = await Axios.get('https://api.giphy.com/v1/gifs/trending', {
+          params: {
+            api_key: NEXT_PUBLIC_GIPHY_API_KEY,
+            limit: 1,
+            offset: getRandomInt(MAX_GIPHY_SEARCH),
+          },
+        });
 
-				setGifs(data);
-			} catch (err) {}
-		};
+        setGifs(data);
+      } catch (err) {}
+    };
 
-		getGif();
-	}, [offset]);
+    getGif();
+  }, [offset]);
 
-	const getRandomTrendingGIF = () => {
-		let randomNumber = getRandomInt(MAX_GIPHY_SEARCH);
+  const getRandomTrendingGIF = () => {
+    let randomNumber = getRandomInt(MAX_GIPHY_SEARCH);
 
-		setOffset(randomNumber);
-	};
+    setOffset(randomNumber);
+  };
 
-	return (
-		<>
-			<Head>
-				<title>404 - you okay?</title>
-			</Head>
+  return (
+    <>
+      <Head>
+        <title>404 - you okay?</title>
+      </Head>
 
-			<div className={styles["gif-holder"]}>
-				{gifs.map((gif) => (
-					<img
-						key={gif.id}
-						src={gif.images.downsized.url}
-						onClick={getRandomTrendingGIF}
-					/>
-				))}
-			</div>
-		</>
-	);
+      <div className={styles['gif-holder']}>
+        {gifs.map(gif => (
+          <img
+            key={gif.id}
+            src={gif.images.downsized.url}
+            onClick={getRandomTrendingGIF}
+          />
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default fourOhFour;

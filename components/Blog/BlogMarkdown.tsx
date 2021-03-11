@@ -1,55 +1,55 @@
-import Link from "next/link";
-import styles from "./BlogMarkdown.module.scss";
+import Link from 'next/link';
+import styles from './BlogMarkdown.module.scss';
 
 interface CustomLinkProps {
-	as: string;
-	href: string;
+  as: string;
+  href: string;
 }
 
 interface ChildrenProps {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const CustomLink = ({ as, href, ...otherProps }: CustomLinkProps) => {
-	return (
-		<>
-			<Link as={as} href={href}>
-				<a className={styles["custom-link"]} {...otherProps} />
-			</Link>
-		</>
-	);
+  return (
+    <>
+      <Link as={as} href={href}>
+        <a className={styles['custom-link']} {...otherProps} />
+      </Link>
+    </>
+  );
 };
 
 const CustomH1 = ({ children }: ChildrenProps) => {
-	return (
-		<>
-			<h1 className={styles["custom-h1"]}>{children}</h1>
-		</>
-	);
+  return (
+    <>
+      <h1 className={styles['custom-h1']}>{children}</h1>
+    </>
+  );
 };
 
 const CustomH2 = ({ children }: ChildrenProps) => {
-	return (
-		<>
-			<h2 className={styles["custom-h2"]}>{children}</h2>
-		</>
-	);
+  return (
+    <>
+      <h2 className={styles['custom-h2']}>{children}</h2>
+    </>
+  );
 };
 
 const CustomP = ({ children }: ChildrenProps) => {
-	return (
-		<>
-			<p className={styles["custom-p"]}>{children}</p>
-		</>
-	);
+  return (
+    <>
+      <p className={styles['custom-p']}>{children}</p>
+    </>
+  );
 };
 
 const CustomStrong = ({ children }: ChildrenProps) => {
-	return (
-		<>
-			<span className={styles["custom-strong"]}>{children}</span>
-		</>
-	);
+  return (
+    <>
+      <span className={styles['custom-strong']}>{children}</span>
+    </>
+  );
 };
 
 export { CustomLink, CustomH1, CustomH2, CustomP, CustomStrong };

@@ -1,42 +1,42 @@
 {
-	"education": {
-		"college": "University of California, Santa Barbara",
-		"degree": "B.S. in Computer Engineering",
-		"startDate": "November 2012",
-		"endDate": "June 2016"
-	},
-	"experience": [
-		{
-			"company": "Reputation.com",
-			"title": "Senior Software Engineer",
-			"startDate": "November 2020",
-			"endDate": "Present",
-			"responsibilities": [
-				"Led frontend development of internal CRM system, reducing clicks per ticket by 70%, allowing for SLA enforcement and on-demand reporting",
-				"Designed a universal, FAQ widget to enhance Google SEO, boosting user engagement and click through rate by 15%",
-				"Identified and resolved bottleneck challenges for low bandwidth users in legacy code through smart caching and identifying key data points, increasing productivity and code maintainability",
-				"Mentored onboarding junior engineers and frequently updated onboarding documentation, decreasing new engineers ramp up time"
-			]
-		},
-		{
-			"company": "Reputation.com",
-			"title": "Software Engineer",
-			"startDate": "October 2018",
-			"endDate": "November 2020",
-			"responsibilities": [
-				"Collaborated with product management to identify user challenges, which lead to developing more interactive charts to visualize customer data",
-				"Led daily standups to identify blockers, progress of different projects, and ensuring teammates were getting the support they needed"
-			]
-		},
-		{
-			"company": "Genentech",
-			"title": "Software Engineer",
-			"startDate": "May 2017",
-			"endDate": "October 2018",
-			"responsibilities": [
-				"Overhauled department’s promotional process by developing a web application using React and Redux to automate data retrieval and document creation, saving 15 hours per nominee.",
-				"Scripted applications using Python frameworks (Pandas, Numpy) to clean and organize large data sets for data visualization platforms."
-			]
-		}
-	]
+  "education": {
+    "college": "University of California, Santa Barbara",
+    "degree": "B.S. in Computer Engineering",
+    "startDate": "November 2012",
+    "endDate": "June 2016"
+  },
+  "experience": [
+    {
+      "company": "Reputation.com",
+      "title": "Senior Software Engineer",
+      "startDate": "November 2020",
+      "endDate": "Present",
+      "responsibilities": [
+        "Led frontend development of internal CRM system, reducing clicks per ticket by 70%, allowing for SLA enforcement and on-demand reporting",
+        "Designed a universal, FAQ widget to enhance Google SEO, boosting user engagement and click through rate by 15%",
+        "Identified and resolved bottleneck challenges for low bandwidth users in legacy code through smart caching and identifying key data points, increasing productivity and code maintainability",
+        "Mentored onboarding junior engineers and frequently updated onboarding documentation, decreasing new engineers ramp up time"
+      ]
+    },
+    {
+      "company": "Reputation.com",
+      "title": "Software Engineer",
+      "startDate": "October 2018",
+      "endDate": "November 2020",
+      "responsibilities": [
+        "Collaborated with product management to identify user challenges, which lead to developing more interactive charts to visualize customer data",
+        "Led daily standups to identify blockers, progress of different projects, and ensuring teammates were getting the support they needed"
+      ]
+    },
+    {
+      "company": "Genentech",
+      "title": "Software Engineer",
+      "startDate": "May 2017",
+      "endDate": "October 2018",
+      "responsibilities": [
+        "Overhauled department’s promotional process by developing a web application using React and Redux to automate data retrieval and document creation, saving 15 hours per nominee.",
+        "Scripted applications using Python frameworks (Pandas, Numpy) to clean and organize large data sets for data visualization platforms."
+      ]
+    }
+  ]
 }

@@ -1,137 +1,137 @@
-@import "./../../../variables";
+@import './../../../variables';
 
 .navigation {
-	height: $navbar-height;
+  height: $navbar-height;
 }
 
 @media screen and (min-width: $desktop-break) {
-	.navigation {
-		width: 1017px;
-		margin: 0 auto;
-		padding-top: 24px;
-		display: flex;
-		font-weight: $asap-regular;
+  .navigation {
+    width: 1017px;
+    margin: 0 auto;
+    padding-top: 24px;
+    display: flex;
+    font-weight: $asap-regular;
 
-		.icon {
-			margin-right: auto;
+    .icon {
+      margin-right: auto;
 
-			&:hover {
-				cursor: pointer;
-			}
-		}
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
-		ul {
-			margin-top: 16px;
+    ul {
+      margin-top: 16px;
 
-			li {
-				display: inline-block;
-				font-size: 18px;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-				.nav-link {
-					color: $main-color;
-					text-decoration: none;
+        .nav-link {
+          color: $main-color;
+          text-decoration: none;
 
-					&:visited,
-					&:hover,
-					&:active {
-						color: $main-color;
-						text-decoration: none;
-					}
-				}
+          &:visited,
+          &:hover,
+          &:active {
+            color: $main-color;
+            text-decoration: none;
+          }
+        }
 
-				&:not(:last-child) {
-					margin-right: 24px;
-				}
-			}
-		}
-	}
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-	.navigation {
-		margin: 0 122px;
-		padding-top: 24px;
-		display: flex;
-		font-weight: $asap-regular;
+  .navigation {
+    margin: 0 122px;
+    padding-top: 24px;
+    display: flex;
+    font-weight: $asap-regular;
 
-		.icon {
-			margin-right: auto;
+    .icon {
+      margin-right: auto;
 
-			&:hover {
-				cursor: pointer;
-			}
-		}
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
-		ul {
-			margin-top: 16px;
+    ul {
+      margin-top: 16px;
 
-			li {
-				display: inline-block;
-				font-size: 18px;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-				.nav-link {
-					color: $main-color;
-					text-decoration: none;
+        .nav-link {
+          color: $main-color;
+          text-decoration: none;
 
-					&:visited,
-					&:hover,
-					&:active {
-						color: $main-color;
-						text-decoration: none;
-					}
-				}
+          &:visited,
+          &:hover,
+          &:active {
+            color: $main-color;
+            text-decoration: none;
+          }
+        }
 
-				&:not(:last-child) {
-					margin-right: 24px;
-				}
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
 
-				&:not(:last-child) {
-					margin-right: 24px;
-				}
-			}
-		}
-	}
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $mobile-break) {
-	.navigation {
-		margin: 0 12px;
-		padding-top: 24px;
-		display: flex;
-		font-weight: $asap-regular;
+  .navigation {
+    margin: 0 12px;
+    padding-top: 24px;
+    display: flex;
+    font-weight: $asap-regular;
 
-		.icon {
-			margin-right: auto;
+    .icon {
+      margin-right: auto;
 
-			&:hover {
-				cursor: pointer;
-			}
-		}
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
-		ul {
-			margin-top: 16px;
-			margin-right: 8px;
+    ul {
+      margin-top: 16px;
+      margin-right: 8px;
 
-			li {
-				display: inline-block;
-				font-size: 18px;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-				.nav-link {
-					color: $main-color;
-					text-decoration: none;
+        .nav-link {
+          color: $main-color;
+          text-decoration: none;
 
-					&:visited,
-					&:hover,
-					&:active {
-						color: $main-color;
-						text-decoration: none;
-					}
-				}
+          &:visited,
+          &:hover,
+          &:active {
+            color: $main-color;
+            text-decoration: none;
+          }
+        }
 
-				&:not(:last-child) {
-					margin-right: 24px;
-				}
-			}
-		}
-	}
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
 }

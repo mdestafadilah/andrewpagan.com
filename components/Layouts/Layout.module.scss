@@ -1,24 +1,24 @@
-@import "./../../variables";
+@import './../../variables';
 
 @media screen and (min-width: $desktop-break) {
-	.main {
-		width: 1017px;
-		margin: 0 auto;
-	}
+  .main {
+    width: 1017px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-	.main {
-		margin: 0 122px;
-	}
+  .main {
+    margin: 0 122px;
+  }
 }
 
 @media screen and (max-width: $mobile-break) {
-	.main {
-		margin: 0 12px;
-	}
+  .main {
+    margin: 0 12px;
+  }
 }
 
 .main {
-	min-height: $main-height;
+  min-height: $main-height;
 }

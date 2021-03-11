@@ -18,27 +18,27 @@ $main-height: calc(100vh - #{$navbar-height + $footer-height});
 
 // Mixins
 @mixin center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :export {
-	main-color: $main-color;
-	secondary-color: $secondary-color;
-	mint-color: $mint-color;
-	mint-secondary-color: $mint-secondary-color;
-	mint-chip-color: $mint-chip-color;
-	asap-bold: $asap-bold;
-	asap-medium: $asap-medium;
-	asap-regular: $asap-regular;
+  main-color: $main-color;
+  secondary-color: $secondary-color;
+  mint-color: $mint-color;
+  mint-secondary-color: $mint-secondary-color;
+  mint-chip-color: $mint-chip-color;
+  asap-bold: $asap-bold;
+  asap-medium: $asap-medium;
+  asap-regular: $asap-regular;
 
-	mobile-break: $mobile-break;
-	desktop-break: $desktop-break;
+  mobile-break: $mobile-break;
+  desktop-break: $desktop-break;
 
-	navbar-height: $navbar-height;
-	footer-height: $footer-height;
-	main-height: $main-height;
+  navbar-height: $navbar-height;
+  footer-height: $footer-height;
+  main-height: $main-height;
 
-	center: center;
+  center: center;
 }

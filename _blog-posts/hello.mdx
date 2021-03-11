@@ -1,24 +1,54 @@
 ---
 title: Hello World
 author: Andrew Pagan
-description: Well, here's my first post ever. It took longer than I expected, but between studying for interviews and accepting a new offer at...
+description:
+  Well, here's my first post ever. It took longer than I expected, but between
+  studying for interviews and accepting a new offer at...
 created: 1614317798474
 ---
 
 # Hello World!
 
-Welcome to my first ever blog post on my website! This little blog took me forever to setup. It was my first time every working with MDX (a superset of Markdown), and getting it up and going was just... bizarre. There were a lot of tutorials I found online, but none of them did what I needed them to do. Not until I found [this tutorial on the NextJS Github](https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote).
+Welcome to my first ever blog post on my website! This little blog took me
+forever to setup. It was my first time every working with MDX (a superset of
+Markdown), and getting it up and going was just... bizarre. There were a lot of
+tutorials I found online, but none of them did what I needed them to do. Not
+until I found
+[this tutorial on the NextJS Github](https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote).
 
-The great thing about that tutorial is that it's simple, uses a slug (query line parameters pretty much) to dynamically grab my `.mdx` files, and just was exactly what I was looking for. I did as come up with [a dynamic way to get posts](https://www.reddit.com/r/nextjs/comments/lsa5rj/dynamically_importing_mdx_files_in_nextjs_based/), but it ended up not being the best way to do it. Using `getStaticPaths` is the ideal way to get the post **BEFORE** the page actually renders. When I was using `useEffect`, I was getting the page after it already loaded, which is not ideal for the end user.
+The great thing about that tutorial is that it's simple, uses a slug (query line
+parameters pretty much) to dynamically grab my `.mdx` files, and just was
+exactly what I was looking for. I did as come up with
+[a dynamic way to get posts](https://www.reddit.com/r/nextjs/comments/lsa5rj/dynamically_importing_mdx_files_in_nextjs_based/),
+but it ended up not being the best way to do it. Using `getStaticPaths` is the
+ideal way to get the post **BEFORE** the page actually renders. When I was using
+`useEffect`, I was getting the page after it already loaded, which is not ideal
+for the end user.
 
-Here is my original thread where I asked [how to add a blog to my NextJS app](https://www.reddit.com/r/nextjs/comments/lqynxd/how_to_add_a_blog_to_my_nextjs_project/). I was surprised to see that Lee Robinson (a developer for Vercel who created NextJS) reached out. His blog worked more for `.md` (Markdown) files rather than `.mdx`. Still, I was surprised he reached out to help and it definitely let me to find thing the solution I was looking for.
+Here is my original thread where I asked
+[how to add a blog to my NextJS app](https://www.reddit.com/r/nextjs/comments/lqynxd/how_to_add_a_blog_to_my_nextjs_project/).
+I was surprised to see that Lee Robinson (a developer for Vercel who created
+NextJS) reached out. His blog worked more for `.md` (Markdown) files rather than
+`.mdx`. Still, I was surprised he reached out to help and it definitely let me
+to find thing the solution I was looking for.
 
 ## Now, for some not so NextJS news
 
-I got a _new job_!!! My last day at Reputation.com is March 5th, and a week later (or 11 days exactly) I will be starting at Khan Academy as an Engineer II. I'm super stoked that I'll be able to contribute to the mission, be a full stack developer starting from day 1, and last but not least, help them with their **Goliath** project where they are making the jump from Python to GoLang (a language I have zero experience with). I have a mixture of excitement and anxiousness in my stomach as the start date comes closer. I'm nervous that I will let them down. I'm pretty sure it's the imposter's syndrome sneaking in, but I'm determined to show them what I got!
+I got a _new job_!!! My last day at Reputation.com is March 5th, and a week
+later (or 11 days exactly) I will be starting at Khan Academy as an Engineer II.
+I'm super stoked that I'll be able to contribute to the mission, be a full stack
+developer starting from day 1, and last but not least, help them with their
+**Goliath** project where they are making the jump from Python to GoLang (a
+language I have zero experience with). I have a mixture of excitement and
+anxiousness in my stomach as the start date comes closer. I'm nervous that I
+will let them down. I'm pretty sure it's the imposter's syndrome sneaking in,
+but I'm determined to show them what I got!
 
 ## Thanks for Reading my first post!
 
-I have a lot to learn about NextJS, MDX, Sass/Scss, and all the other technologies I am going to attempt to incorporate into this personal website of mine. It will definitely take time, but I know the only way to learn is to bang your head against the wall sometimes and keep going for it.
+I have a lot to learn about NextJS, MDX, Sass/Scss, and all the other
+technologies I am going to attempt to incorporate into this personal website of
+mine. It will definitely take time, but I know the only way to learn is to bang
+your head against the wall sometimes and keep going for it.
 
 Have a good one! :)

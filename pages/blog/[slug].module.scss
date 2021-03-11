@@ -1,19 +1,19 @@
-@import "./../../variables";
+@import './../../variables';
 
 .blog-post {
-	padding-top: 100px;
+  padding-top: 100px;
 
-	.crumb {
-		text-decoration: none;
-		color: $mint-secondary-color;
-	}
+  .crumb {
+    text-decoration: none;
+    color: $mint-secondary-color;
+  }
 
-	.title {
-		font-size: 1.1rem;
-	}
+  .title {
+    font-size: 1.1rem;
+  }
 
-	.date {
-		color: $secondary-color;
-		font-size: 1rem;
-	}
+  .date {
+    color: $secondary-color;
+    font-size: 1rem;
+  }
 }
