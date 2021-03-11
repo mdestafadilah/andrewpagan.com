@@ -13,6 +13,7 @@ import {
   CustomLink,
   CustomP,
   CustomStrong,
+  CustomUl,
 } from '../../components/Blog/BlogMarkdown';
 import styles from './[slug].module.scss';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
@@ -25,6 +26,7 @@ const components = {
   h2: CustomH2,
   p: CustomP,
   strong: CustomStrong,
+  ul: CustomUl,
 };
 
 interface FrontMatter {
@@ -44,7 +46,7 @@ interface BlogPostProps {
 }
 
 const BlogInformation: React.FC<BlogInformationProps> = ({ frontMatter }) => {
-  const date = new Date(Number(frontMatter.created)),
+  const date = new Date(frontMatter.created),
     createdDate = `${
       date.getMonth() + 1
     }/${date.getDate()}/${date.getFullYear()}`;
@@ -87,11 +89,11 @@ interface Slug {
   slug: string;
 }
 
-interface Params {
+interface getStaticPropsParams {
   params: Slug;
 }
 
-export const getStaticProps = async ({ params }: Params) => {
+export const getStaticProps = async ({ params }: getStaticPropsParams) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
 
