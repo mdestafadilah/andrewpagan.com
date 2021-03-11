@@ -8,5 +8,6 @@
   "jsxBracketSameLine": true,
   "arrowParens": "avoid",
   "htmlWhitespaceSensitivity": "strict",
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "trailingComma": "all"
 }
