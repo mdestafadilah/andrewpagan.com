@@ -52,4 +52,12 @@ const CustomStrong = ({ children }: ChildrenProps) => {
   );
 };
 
-export { CustomLink, CustomH1, CustomH2, CustomP, CustomStrong };
+const CustomUl = ({ children }: ChildrenProps) => {
+  return (
+    <>
+      <ul className={styles['custom-ul']}>{children}</ul>
+    </>
+  );
+};
+
+export { CustomLink, CustomH1, CustomH2, CustomP, CustomStrong, CustomUl };
