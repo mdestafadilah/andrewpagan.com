@@ -1,274 +1,274 @@
-@import "../variables";
+@import '../variables';
 
 @media screen and (min-width: $desktop-break) {
-	.information {
-		width: 1017px;
-		margin: 0 auto;
+  .information {
+    width: 1017px;
+    margin: 0 auto;
 
-		.p-rel {
-			position: relative;
-		}
+    .p-rel {
+      position: relative;
+    }
 
-		.experience {
-			&:not(:first-child) {
-				margin-top: 16px;
-			}
-		}
+    .experience {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
 
-		.border-bottom {
-			margin-bottom: 32px;
-		}
+    .border-bottom {
+      margin-bottom: 32px;
+    }
 
-		.section-info {
-			width: 79%;
-			display: inline-block;
+    .section-info {
+      width: 79%;
+      display: inline-block;
 
-			.section-info-header {
-				&:not(:first-child) {
-					margin-top: 16px;
-				}
+      .section-info-header {
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
 
-				display: inline-block;
+        display: inline-block;
 
-				h3 {
-					font-size: 18px;
-				}
+        h3 {
+          font-size: 18px;
+        }
 
-				h4 {
-					color: $secondary-color;
-					font-size: 16px;
-				}
-			}
+        h4 {
+          color: $secondary-color;
+          font-size: 16px;
+        }
+      }
 
-			.section-info-dates {
-				float: right;
-				font-size: 16px;
-				display: inline-block;
-			}
+      .section-info-dates {
+        float: right;
+        font-size: 16px;
+        display: inline-block;
+      }
 
-			.section-info-points {
-				margin-top: 16px;
-				margin-left: 16px;
+      .section-info-points {
+        margin-top: 16px;
+        margin-left: 16px;
 
-				.info {
-					line-height: 1.41;
+        .info {
+          line-height: 1.41;
 
-					&:not(:first-child) {
-						margin-top: 3px;
-					}
-				}
-			}
+          &:not(:first-child) {
+            margin-top: 3px;
+          }
+        }
+      }
 
-			.overview-container {
-				display: inline-block;
-				width: 20%;
+      .overview-container {
+        display: inline-block;
+        width: 20%;
 
-				&:not(:last-child) {
-					margin-right: 62px;
-				}
+        &:not(:last-child) {
+          margin-right: 62px;
+        }
 
-				.overview-header {
-					font-size: 18px;
-					margin-bottom: 3px;
-				}
+        .overview-header {
+          font-size: 18px;
+          margin-bottom: 3px;
+        }
 
-				ul {
-					list-style: none;
-					columns: 2;
-					-webkit-columns: 2;
-					-moz-columns: 2;
+        ul {
+          list-style: none;
+          columns: 2;
+          -webkit-columns: 2;
+          -moz-columns: 2;
 
-					li {
-						width: 50%;
-					}
-				}
-			}
-		}
+          li {
+            width: 50%;
+          }
+        }
+      }
+    }
 
-		.vertical-line {
-			position: absolute;
-			left: 18%;
-			background: $mint-color;
-			width: 2px;
-			height: 100%;
-		}
-	}
+    .vertical-line {
+      position: absolute;
+      left: 18%;
+      background: $mint-color;
+      width: 2px;
+      height: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-	.information {
-		.p-rel {
-			position: relative;
-		}
+  .information {
+    .p-rel {
+      position: relative;
+    }
 
-		.experience {
-			&:not(:first-child) {
-				margin-top: 16px;
-			}
-		}
+    .experience {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
 
-		.border-bottom {
-			margin-bottom: 32px;
-		}
+    .border-bottom {
+      margin-bottom: 32px;
+    }
 
-		.section-info {
-			width: 79%;
-			display: inline-block;
+    .section-info {
+      width: 79%;
+      display: inline-block;
 
-			.section-info-header {
-				&:not(:first-child) {
-					margin-top: 16px;
-				}
+      .section-info-header {
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
 
-				display: inline-block;
+        display: inline-block;
 
-				h3 {
-					font-size: 18px;
-				}
+        h3 {
+          font-size: 18px;
+        }
 
-				h4 {
-					color: $secondary-color;
-					font-size: 16px;
-				}
-			}
+        h4 {
+          color: $secondary-color;
+          font-size: 16px;
+        }
+      }
 
-			.section-info-dates {
-				font-size: 16px;
-				float: right;
-				display: inline-block;
-			}
+      .section-info-dates {
+        font-size: 16px;
+        float: right;
+        display: inline-block;
+      }
 
-			.section-info-points {
-				margin-top: 16px;
-				margin-left: 16px;
+      .section-info-points {
+        margin-top: 16px;
+        margin-left: 16px;
 
-				li {
-					line-height: 1.41;
+        li {
+          line-height: 1.41;
 
-					&:not(:first-child) {
-						margin-top: 3px;
-					}
-				}
-			}
+          &:not(:first-child) {
+            margin-top: 3px;
+          }
+        }
+      }
 
-			.overview-container {
-				display: inline-block;
-				float: left;
-				width: 180px;
+      .overview-container {
+        display: inline-block;
+        float: left;
+        width: 180px;
 
-				&:not(:last-child) {
-					margin-right: 62px;
-				}
+        &:not(:last-child) {
+          margin-right: 62px;
+        }
 
-				.overview-header {
-					font-size: 18px;
-					margin-bottom: 3px;
-				}
+        .overview-header {
+          font-size: 18px;
+          margin-bottom: 3px;
+        }
 
-				ul {
-					width: 180px;
-					list-style: none;
-					columns: 2;
-					-webkit-columns: 2;
-					-moz-columns: 2;
+        ul {
+          width: 180px;
+          list-style: none;
+          columns: 2;
+          -webkit-columns: 2;
+          -moz-columns: 2;
 
-					li {
-						width: 50%;
-					}
-				}
-			}
-		}
+          li {
+            width: 50%;
+          }
+        }
+      }
+    }
 
-		.vertical-line {
-			position: absolute;
-			left: 18%;
-			background: $mint-color;
-			width: 2px;
-			height: 100%;
-		}
-	}
+    .vertical-line {
+      position: absolute;
+      left: 18%;
+      background: $mint-color;
+      width: 2px;
+      height: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: $mobile-break) {
-	.information {
-		margin: 0 12px;
+  .information {
+    margin: 0 12px;
 
-		.p-rel {
-			position: relative;
-		}
+    .p-rel {
+      position: relative;
+    }
 
-		.experience {
-			&:not(:first-child) {
-				margin-top: 16px;
-			}
-		}
+    .experience {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
 
-		.border-bottom {
-			margin-bottom: 32px;
-		}
+    .border-bottom {
+      margin-bottom: 32px;
+    }
 
-		.section-info {
-			.section-info-header {
-				&:not(:first-child) {
-					margin-top: 16px;
-				}
+    .section-info {
+      .section-info-header {
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
 
-				display: inline-block;
+        display: inline-block;
 
-				h3 {
-					font-size: 18px;
-				}
+        h3 {
+          font-size: 18px;
+        }
 
-				h4 {
-					color: $secondary-color;
-					font-size: 16px;
-				}
-			}
+        h4 {
+          color: $secondary-color;
+          font-size: 16px;
+        }
+      }
 
-			.section-info-dates {
-				font-size: 16px;
-				margin-top: 4px;
-				display: block;
-			}
+      .section-info-dates {
+        font-size: 16px;
+        margin-top: 4px;
+        display: block;
+      }
 
-			.section-info-points {
-				margin-top: 16px;
-				margin-left: 16px;
+      .section-info-points {
+        margin-top: 16px;
+        margin-left: 16px;
 
-				li {
-					line-height: 1.41;
+        li {
+          line-height: 1.41;
 
-					&:not(:first-child) {
-						margin-top: 3px;
-					}
-				}
-			}
+          &:not(:first-child) {
+            margin-top: 3px;
+          }
+        }
+      }
 
-			.overview-container {
-				display: block;
-				margin-bottom: 8px;
+      .overview-container {
+        display: block;
+        margin-bottom: 8px;
 
-				.overview-header {
-					font-size: 18px;
-					margin-bottom: 3px;
-				}
+        .overview-header {
+          font-size: 18px;
+          margin-bottom: 3px;
+        }
 
-				ul {
-					width: 180px;
-					list-style: none;
-					columns: 2;
-					-webkit-columns: 2;
-					-moz-columns: 2;
+        ul {
+          width: 180px;
+          list-style: none;
+          columns: 2;
+          -webkit-columns: 2;
+          -moz-columns: 2;
 
-					li {
-						width: 50%;
-					}
-				}
-			}
-		}
+          li {
+            width: 50%;
+          }
+        }
+      }
+    }
 
-		.vertical-line {
-			display: none;
-		}
-	}
+    .vertical-line {
+      display: none;
+    }
+  }
 }

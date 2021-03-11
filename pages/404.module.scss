@@ -1,18 +1,18 @@
-@import "../variables";
+@import '../variables';
 
 .gif-holder {
-	height: calc(100vh - #{$navbar-height} - #{$footer-height});
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  height: calc(100vh - #{$navbar-height} - #{$footer-height});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-	img {
-		max-width: 100%;
-		max-height: 100%;
+  img {
+    max-width: 100%;
+    max-height: 100%;
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

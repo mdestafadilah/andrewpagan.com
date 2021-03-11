@@ -1,27 +1,27 @@
-@import "./../../_variables.scss";
+@import './../../_variables.scss';
 
 .custom-link {
-	color: $mint-secondary-color;
-	text-decoration: none;
+  color: $mint-secondary-color;
+  text-decoration: none;
 }
 
 .custom-h1 {
-	color: $main-color;
-	padding-bottom: 12px;
+  color: $main-color;
+  padding-bottom: 12px;
 }
 
 .custom-h2 {
-	color: $main-color;
-	padding-bottom: 12px;
+  color: $main-color;
+  padding-bottom: 12px;
 }
 
 .custom-p {
-	color: $main-color;
-	padding-bottom: 8px;
-	line-height: 1.5;
+  color: $main-color;
+  padding-bottom: 8px;
+  line-height: 1.5;
 }
 
 .custom-strong {
-	color: $mint-chip-color;
-	font-weight: 700;
+  color: $mint-chip-color;
+  font-weight: 700;
 }

@@ -1,24 +1,24 @@
 {
-	"social-media": [
-		{
-			"name": "Github",
-			"url": "https://github.com/drewkiimon"
-		},
-		{
-			"name": "Leetcode",
-			"url": "https://leetcode.com/drewbie/"
-		},
-		{
-			"name": "StackOverflow",
-			"url": "https://stackoverflow.com/users/8249594/drewkiimon"
-		},
-		{
-			"name": "LinkedIn",
-			"url": "https://www.linkedin.com/in/andrewpagan/"
-		},
-		{
-			"name": "SoundCloud",
-			"url": "https://soundcloud.com/drewkiimon"
-		}
-	]
+  "social-media": [
+    {
+      "name": "Github",
+      "url": "https://github.com/drewkiimon"
+    },
+    {
+      "name": "Leetcode",
+      "url": "https://leetcode.com/drewbie/"
+    },
+    {
+      "name": "StackOverflow",
+      "url": "https://stackoverflow.com/users/8249594/drewkiimon"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/andrewpagan/"
+    },
+    {
+      "name": "SoundCloud",
+      "url": "https://soundcloud.com/drewkiimon"
+    }
+  ]
 }
