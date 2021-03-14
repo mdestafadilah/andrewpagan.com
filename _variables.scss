@@ -1,9 +1,9 @@
 // Default variables
 
 $primary-grey: #2e2e2e;
-$secondary-color: #a1a1a1;
-$mint-color: #068936;
-$mint-secondary-color: #0ad153;
+$subtle-grey: #a1a1a1;
+$accent-color: #068936;
+$secondary-accent-color: #0ad153;
 $mint-chip-color: #00cd9e;
 $font-bold: 700;
 $font-semi-bold: 600;
@@ -26,9 +26,9 @@ $main-height: calc(100vh - #{$navbar-height + $footer-height});
 
 :export {
   primary-grey: $primary-grey;
-  secondary-color: $secondary-color;
-  mint-color: $mint-color;
-  mint-secondary-color: $mint-secondary-color;
+  subtle-grey: $subtle-grey;
+  accent-color: $accent-color;
+  secondary-accent-color: $secondary-accent-color;
   mint-chip-color: $mint-chip-color;
   font-bold: $font-bold;
   font-semi-bold: $font-semi-bold;
