@@ -12,7 +12,7 @@
 
     .name {
       display: block;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: $font-semi-bold;
       margin-bottom: 5px;
     }
@@ -27,7 +27,7 @@
     }
 
     .copyright {
-      font-size: 14px;
+      font-size: 0.8rem;
       margin-top: 40px;
 
       span {
@@ -46,7 +46,7 @@
         width: 32px;
         height: 32px;
         display: inline-block;
-        font-size: 32px;
+        font-size: 2rem;
 
         .link {
           color: white;

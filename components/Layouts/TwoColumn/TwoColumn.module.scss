@@ -4,7 +4,7 @@
   .left-column {
     width: 20%;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.2rem;
     vertical-align: top;
   }
 
@@ -17,7 +17,7 @@
 @media screen and (max-width: $mobile-break) {
   .left-column {
     margin-bottom: 12px;
-    font-size: 20px;
+    font-size: 1.2rem;
     vertical-align: top;
   }
 }

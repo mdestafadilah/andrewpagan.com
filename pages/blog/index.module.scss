@@ -10,7 +10,7 @@
     li {
       .title {
         display: block;
-        font-size: 20px;
+        font-size: 1.2rem
         font-weight: $font-semi-bold;
         color: $accent-color;
         text-decoration: none;
@@ -24,7 +24,7 @@
       }
 
       .description {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 40px;
         color: $primary-grey;
       }
