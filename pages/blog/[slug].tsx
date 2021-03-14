@@ -14,7 +14,7 @@ import {
   CustomP,
   CustomStrong,
   CustomUl,
-} from '../../components/Blog/BlogMarkdown';
+} from '../../components/BlogMarkdown/BlogMarkdown';
 import styles from './[slug].module.scss';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
 import TwoColumn from '../../components/Layouts/TwoColumn/TwoColumn';

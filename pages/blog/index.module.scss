@@ -11,22 +11,22 @@
       .title {
         display: block;
         font-size: 20px;
-        font-weight: $asap-bold;
+        font-weight: $font-bold;
         color: $mint-chip-color;
         text-decoration: none;
       }
 
       time {
         display: block;
-        color: $main-color;
-        font-weight: $asap-medium;
+        color: $primary-grey;
+        font-weight: $font-semi-bold;
         margin-bottom: 8px;
       }
 
       .description {
         font-size: 16px;
         margin-bottom: 40px;
-        color: $main-color;
+        color: $primary-grey;
       }
     }
   }

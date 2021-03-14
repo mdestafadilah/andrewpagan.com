@@ -1,0 +1,62 @@
+@import './../../_variables.scss';
+
+.custom-link {
+  color: $mint-secondary-color;
+  text-decoration: none;
+}
+
+.custom-p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.custom-h1 {
+  color: $primary-grey;
+  font-weight: 300;
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+
+.custom-h2 {
+  color: $primary-grey;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+
+.custom-h3 {
+  color: $primary-grey;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+
+.custom-h4 {
+  color: $primary-grey;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+
+.custom-h5 {
+  color: $primary-grey;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+
+.custom-p {
+  color: $primary-grey;
+  padding-bottom: 8px;
+  line-height: 1.5;
+}
+
+.custom-strong {
+  color: $mint-chip-color;
+  font-weight: 700;
+}
+
+.custom-ul {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}

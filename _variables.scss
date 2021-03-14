@@ -1,13 +1,14 @@
 // Default variables
 
-$main-color: #454545;
+$primary-grey: #2e2e2e;
 $secondary-color: #a1a1a1;
-$mint-color: #42cc9c;
-$mint-secondary-color: #00b087;
+$mint-color: #068936;
+$mint-secondary-color: #0ad153;
 $mint-chip-color: #00cd9e;
-$asap-bold: 700;
-$asap-medium: 600;
-$asap-regular: 400;
+$font-bold: 700;
+$font-semi-bold: 600;
+$font-regular: 400;
+$font-light: 300;
 
 $mobile-break: 740px;
 $desktop-break: 1278px;
@@ -24,14 +25,15 @@ $main-height: calc(100vh - #{$navbar-height + $footer-height});
 }
 
 :export {
-  main-color: $main-color;
+  primary-grey: $primary-grey;
   secondary-color: $secondary-color;
   mint-color: $mint-color;
   mint-secondary-color: $mint-secondary-color;
   mint-chip-color: $mint-chip-color;
-  asap-bold: $asap-bold;
-  asap-medium: $asap-medium;
-  asap-regular: $asap-regular;
+  font-bold: $font-bold;
+  font-semi-bold: $font-semi-bold;
+  font-regular: $font-regular;
+  font-light: $font-light;
 
   mobile-break: $mobile-break;
   desktop-break: $desktop-break;

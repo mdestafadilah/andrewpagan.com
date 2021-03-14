@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Asap+Condensed:400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 @import '../variables';
 
 body {
@@ -9,6 +9,6 @@ body {
   }
 
   margin: 0;
-  font-family: 'Asap Condensed', sans-serif;
-  color: $main-color;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $primary-grey;
 }

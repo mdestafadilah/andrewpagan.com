@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding-top: 24px;
     display: flex;
-    font-weight: $asap-regular;
+    font-weight: $font-regular;
 
     .icon {
       margin-right: auto;
@@ -28,13 +28,13 @@
         font-size: 18px;
 
         .nav-link {
-          color: $main-color;
+          color: $primary-grey;
           text-decoration: none;
 
           &:visited,
           &:hover,
           &:active {
-            color: $main-color;
+            color: $primary-grey;
             text-decoration: none;
           }
         }
@@ -52,7 +52,7 @@
     margin: 0 122px;
     padding-top: 24px;
     display: flex;
-    font-weight: $asap-regular;
+    font-weight: $font-regular;
 
     .icon {
       margin-right: auto;
@@ -70,13 +70,13 @@
         font-size: 18px;
 
         .nav-link {
-          color: $main-color;
+          color: $primary-grey;
           text-decoration: none;
 
           &:visited,
           &:hover,
           &:active {
-            color: $main-color;
+            color: $primary-grey;
             text-decoration: none;
           }
         }
@@ -98,7 +98,7 @@
     margin: 0 12px;
     padding-top: 24px;
     display: flex;
-    font-weight: $asap-regular;
+    font-weight: $font-regular;
 
     .icon {
       margin-right: auto;
@@ -117,13 +117,13 @@
         font-size: 18px;
 
         .nav-link {
-          color: $main-color;
+          color: $primary-grey;
           text-decoration: none;
 
           &:visited,
           &:hover,
           &:active {
-            color: $main-color;
+            color: $primary-grey;
             text-decoration: none;
           }
         }
