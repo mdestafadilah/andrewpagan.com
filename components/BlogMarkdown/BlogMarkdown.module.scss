@@ -1,59 +1,67 @@
 @import './../../_variables.scss';
 
 .custom-link {
-  color: $secondary-accent-color;
+  color: $accent-color;
   text-decoration: none;
-}
-
-.custom-p {
-  font-size: 1rem;
-  font-weight: normal;
 }
 
 .custom-h1 {
   color: $primary-grey;
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: $font-light;
+  font-size: 2.2rem;
   padding-bottom: 12px;
+  line-height: 1.25;
 }
 
 .custom-h2 {
   color: $primary-grey;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: $font-bold;
+  font-size: 1.8rem;
   padding-bottom: 12px;
+  line-height: 1.25;
+  padding-top: 30px;
 }
 
 .custom-h3 {
   color: $primary-grey;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: $font-semi-bold;
+  font-size: 1.6rem;
   padding-bottom: 12px;
+  line-height: 1.25;
 }
 
 .custom-h4 {
   color: $primary-grey;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: $font-semi-bold;
+  font-size: 1.4rem;
   padding-bottom: 12px;
+  line-height: 1.25;
 }
 
 .custom-h5 {
   color: $primary-grey;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: $font-semi-bold;
+  font-size: 1.2rem;
   padding-bottom: 12px;
+  line-height: 1.25;
 }
 
 .custom-p {
   color: $primary-grey;
   padding-bottom: 8px;
   line-height: 1.5;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.custom-caption {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 .custom-strong {
-  color: $mint-chip-color;
-  font-weight: 700;
+  font-weight: $font-bold;
 }
 
 .custom-ul {

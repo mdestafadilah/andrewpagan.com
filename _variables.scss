@@ -1,10 +1,8 @@
 // Default variables
-
 $primary-grey: #2e2e2e;
 $subtle-grey: #a1a1a1;
 $accent-color: #068936;
 $secondary-accent-color: #0ad153;
-$mint-chip-color: #00cd9e;
 $font-bold: 700;
 $font-semi-bold: 600;
 $font-regular: 400;
@@ -29,7 +27,6 @@ $main-height: calc(100vh - #{$navbar-height + $footer-height});
   subtle-grey: $subtle-grey;
   accent-color: $accent-color;
   secondary-accent-color: $secondary-accent-color;
-  mint-chip-color: $mint-chip-color;
   font-bold: $font-bold;
   font-semi-bold: $font-semi-bold;
   font-regular: $font-regular;
