@@ -7,6 +7,15 @@
   },
   "experience": [
     {
+      "company": "Khan Academy",
+      "title": "Software Engineer II",
+      "startDate": "March 2021",
+      "endDate": "present",
+      "responsibilities": [
+        "Idk what to write but working on the Districts team right now"
+      ]
+    },
+    {
       "company": "Reputation.com",
       "title": "Senior Software Engineer",
       "startDate": "November 2020",

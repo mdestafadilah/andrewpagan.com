@@ -95,16 +95,16 @@ const Resume = () => {
         <div className={styles['vertical-line']}></div>
         <TwoColumn
           className={styles['border-bottom']}
-          leftColumn={<span>Education</span>}
-          rightColumn={<Education education={ResumeData.education}></Education>}
-        />
-
-        <TwoColumn
-          className={styles['border-bottom']}
           leftColumn={<span>Experience</span>}
           rightColumn={ResumeData.experience.map((job, index) => (
             <Experience key={index} experience={job}></Experience>
           ))}
+        />
+
+        <TwoColumn
+          className={styles['border-bottom']}
+          leftColumn={<span>Education</span>}
+          rightColumn={<Education education={ResumeData.education}></Education>}
         />
 
         <TwoColumn
