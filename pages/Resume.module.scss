@@ -1,280 +1,118 @@
 @import '../variables';
 
-@media screen and (min-width: $desktop-break) {
-  .information {
-    width: 1017px;
-    margin: 0 auto;
+.information {
+  width: 1017px;
+  margin: 0 auto;
 
-    .p-rel {
-      position: relative;
-    }
-
-    .experience {
-      &:not(:first-child) {
-        margin-top: 16px;
-      }
-    }
-
-    .border-bottom {
-      margin-bottom: 32px;
-    }
-
-    .section-info {
-      width: 79%;
-      display: inline-block;
-
-      .section-info-header {
-        &:not(:first-child) {
-          margin-top: 16px;
-        }
-
-        display: inline-block;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: $font-semi-bold;
-        }
-
-        h4 {
-          color: $subtle-grey;
-          font-size: 1rem;
-          font-weight: $font-semi-bold;
-        }
-      }
-
-      .section-info-dates {
-        float: right;
-        font-size: 1rem;
-        display: inline-block;
-      }
-
-      .section-info-points {
-        margin-top: 16px;
-        margin-left: 16px;
-
-        .info {
-          line-height: 1.41;
-
-          &:not(:first-child) {
-            margin-top: 3px;
-          }
-        }
-      }
-
-      .overview-container {
-        display: inline-block;
-        width: 20%;
-        vertical-align: top;
-
-        &:not(:last-child) {
-          margin-right: 62px;
-        }
-
-        .overview-header {
-          font-size: 1.2rem;
-          margin-bottom: 3px;
-        }
-
-        ul {
-          list-style: none;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-
-          li {
-            width: 50%;
-          }
-        }
-      }
-    }
-
-    .vertical-line {
-      position: absolute;
-      left: 18%;
-      background: $accent-color;
-      width: 2px;
-      height: 100%;
-    }
-  }
-}
-
-@media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-  .information {
-    .p-rel {
-      position: relative;
-    }
-
-    .experience {
-      &:not(:first-child) {
-        margin-top: 16px;
-      }
-    }
-
-    .border-bottom {
-      margin-bottom: 32px;
-    }
-
-    .section-info {
-      width: 79%;
-      display: inline-block;
-
-      .section-info-header {
-        &:not(:first-child) {
-          margin-top: 16px;
-        }
-
-        display: inline-block;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: $font-semi-bold;
-        }
-
-        h4 {
-          color: $subtle-grey;
-          font-size: 1rem;
-          font-weight: $font-semi-bold;
-        }
-      }
-
-      .section-info-dates {
-        font-size: 1rem;
-        float: right;
-        display: inline-block;
-      }
-
-      .section-info-points {
-        margin-top: 16px;
-        margin-left: 16px;
-
-        li {
-          line-height: 1.41;
-
-          &:not(:first-child) {
-            margin-top: 3px;
-          }
-        }
-      }
-
-      .overview-container {
-        display: inline-block;
-        width: 180px;
-        vertical-align: top;
-
-        &:not(:last-child) {
-          margin-right: 62px;
-        }
-
-        .overview-header {
-          font-size: 1.2rem;
-          margin-bottom: 3px;
-        }
-
-        ul {
-          width: 180px;
-          list-style: none;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-
-          li {
-            width: 50%;
-          }
-        }
-      }
-    }
-
-    .vertical-line {
-      position: absolute;
-      left: 18%;
-      background: $accent-color;
-      width: 2px;
-      height: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: $mobile-break) {
-  .information {
+  @media screen and (max-width: $mobile-break) {
     margin: 0 12px;
+  }
 
-    .p-rel {
-      position: relative;
+  .p-rel {
+    position: relative;
+  }
+
+  .experience {
+    &:not(:first-child) {
+      margin-top: 16px;
     }
+  }
 
-    .experience {
+  .border-bottom {
+    margin-bottom: 32px;
+  }
+
+  .section-info {
+    width: 79%;
+    display: inline-block;
+
+    .section-info-header {
+      display: inline-block;
+
       &:not(:first-child) {
         margin-top: 16px;
       }
-    }
 
-    .border-bottom {
-      margin-bottom: 32px;
-    }
-
-    .section-info {
-      .section-info-header {
-        &:not(:first-child) {
-          margin-top: 16px;
-        }
-
-        display: inline-block;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: $font-semi-bold;
-        }
-
-        h4 {
-          color: $subtle-grey;
-          font-size: 1rem;
-          font-weight: $font-semi-bold;
-        }
+      h3 {
+        font-size: 1.2rem;
+        font-weight: $font-semi-bold;
       }
 
-      .section-info-dates {
+      h4 {
+        color: $subtle-grey;
         font-size: 1rem;
+        font-weight: $font-semi-bold;
+      }
+    }
+
+    .section-info-dates {
+      float: right;
+      font-size: 1rem;
+      display: inline-block;
+
+      @media screen and (max-width: $mobile-break) {
         margin-top: 4px;
         display: block;
       }
+    }
 
-      .section-info-points {
-        margin-top: 16px;
-        margin-left: 16px;
+    .section-info-points {
+      margin-top: 16px;
+      margin-left: 16px;
 
-        li {
-          line-height: 1.41;
+      .info {
+        line-height: 1.41;
 
-          &:not(:first-child) {
-            margin-top: 3px;
-          }
-        }
-      }
-
-      .overview-container {
-        margin-bottom: 8px;
-        vertical-align: top;
-
-        .overview-header {
-          font-size: 1.2rem;
-          margin-bottom: 3px;
-        }
-
-        ul {
-          width: 180px;
-          list-style: none;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-
-          li {
-            width: 50%;
-          }
+        &:not(:first-child) {
+          margin-top: 3px;
         }
       }
     }
 
-    .vertical-line {
+    .overview-container {
+      display: inline-block;
+      width: 20%;
+      vertical-align: top;
+
+      @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
+        width: 180px;
+      }
+
+      @media screen and (max-width: $mobile-break) {
+        display: iblock;
+        margin-bottom: 8px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 62px;
+      }
+
+      .overview-header {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+      }
+
+      ul {
+        list-style: none;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+
+        li {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .vertical-line {
+    position: absolute;
+    left: 18%;
+    background: $accent-color;
+    width: 2px;
+    height: 100%;
+
+    @media screen and (max-width: $mobile-break) {
       display: none;
     }
   }
