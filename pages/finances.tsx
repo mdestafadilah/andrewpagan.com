@@ -53,14 +53,17 @@ const options: Highcharts.Options = {
   series: [
     {
       name: 'John',
+      type: 'line',
       data: [5, 3, 4, 7, 2],
     },
     {
       name: 'Jane',
+      type: 'line',
       data: [2, 2, 3, 2, 1],
     },
     {
       name: 'Joe',
+      type: 'line',
       data: [3, 4, 4, 2, 5],
     },
   ],

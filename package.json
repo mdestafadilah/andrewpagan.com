@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
-    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/loader": "^0.15.4",
     "@next/mdx": "^10.0.7",
     "axios": "^0.21.1",
     "gray-matter": "^4.0.2",
