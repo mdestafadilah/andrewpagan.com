@@ -9,7 +9,7 @@ const options: Highcharts.Options = {
     type: 'column',
   },
   title: {
-    text: 'Stuff',
+    text: 'Stacked column chart',
   },
   xAxis: {
     categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas'],
@@ -53,17 +53,17 @@ const options: Highcharts.Options = {
   series: [
     {
       name: 'John',
-      type: 'line',
+      type: 'column',
       data: [5, 3, 4, 7, 2],
     },
     {
       name: 'Jane',
-      type: 'line',
+      type: 'column',
       data: [2, 2, 3, 2, 1],
     },
     {
       name: 'Joe',
-      type: 'line',
+      type: 'column',
       data: [3, 4, 4, 2, 5],
     },
   ],
