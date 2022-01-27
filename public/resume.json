@@ -7,6 +7,16 @@
   },
   "experience": [
     {
+      "company": "Khan Academy",
+      "title": "Software Engineer II",
+      "startDate": "March 2021",
+      "endDate": "Present",
+      "responsibilities": [
+        "Creating district administrator dashboards in React.js for the Districts Team",
+        "Researched multiple data visualization libraries to help company decide on which library to use for admin charts"
+      ]
+    },
+    {
       "company": "Reputation.com",
       "title": "Senior Software Engineer",
       "startDate": "November 2020",

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import TwoColumn from '../components/Layouts/TwoColumn/TwoColumn';
 import ResumeData from '../public/resume.json';
 
@@ -88,16 +88,11 @@ const Skills = () => {
   );
 };
 
-const Resume = () => {
+const Resume = (): React.ReactNode => {
   return (
     <div className={styles.information}>
       <div className={styles['p-rel']}>
         <div className={styles['vertical-line']}></div>
-        <TwoColumn
-          className={styles['border-bottom']}
-          leftColumn={<span>Education</span>}
-          rightColumn={<Education education={ResumeData.education}></Education>}
-        />
 
         <TwoColumn
           className={styles['border-bottom']}
@@ -105,6 +100,12 @@ const Resume = () => {
           rightColumn={ResumeData.experience.map((job, index) => (
             <Experience key={index} experience={job}></Experience>
           ))}
+        />
+
+        <TwoColumn
+          className={styles['border-bottom']}
+          leftColumn={<span>Education</span>}
+          rightColumn={<Education education={ResumeData.education}></Education>}
         />
 
         <TwoColumn
