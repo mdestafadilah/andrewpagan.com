@@ -146,46 +146,54 @@ const options: Highcharts.Options = {
 };
 
 type FormattedData = {
-  [key: string]: Array<string>;
+  [key: string]: Array<string> | Array<number>;
   Date: Array<string>;
-  Taxes: Array<string>;
-  Benefits: Array<string>;
-  Retirement: Array<string>;
-  'Take Home': Array<string>;
-  Total: Array<string>;
+  Taxes: Array<number>;
+  Benefits: Array<number>;
+  Retirement: Array<number>;
+  'Take Home': Array<number>;
+  Total: Array<number>;
 };
-
-const formatted: FormattedData = {
-  Date: [],
-  Taxes: [],
-  Benefits: [],
-  Retirement: [],
-  'Take Home': [],
-  Total: [],
-};
-
-data.forEach(d => {
-  Object.keys(d).forEach(k => {
-    formatted[k].push(d[k]);
-  });
-});
-
-const series: Highcharts.SeriesOptionsType[] = [];
-
-Object.keys(formatted).forEach(f => {
-  series.push({
-    name: f,
-    data: formatted[f],
-    type: 'column',
-  });
-});
-
-options.series = series;
 
 type Props = {};
 
 const Finances = (props: Props) => {
   const chartComponentRef = React.useRef<HighchartsReact.RefObject>(null);
+
+  const convertMoneyToFloat = (money: string): number => {
+    return Number(money.replace(/[^0-9.-]+/g, ''));
+  };
+
+  const formatted: FormattedData = {
+    Date: [],
+    Taxes: [],
+    Benefits: [],
+    Retirement: [],
+    'Take Home': [],
+    Total: [],
+  };
+
+  data.forEach(d => {
+    Object.keys(d).forEach(k => {
+      if (k !== 'Date' && k !== 'Total') {
+        formatted[k].push(convertMoneyToFloat(d[k]));
+      }
+    });
+  });
+
+  const series: Highcharts.SeriesOptionsType[] = [];
+
+  Object.keys(formatted).forEach(f => {
+    if (f !== 'Date' && f !== 'Total') {
+      series.push({
+        name: f,
+        data: formatted[f],
+        type: 'column',
+      });
+    }
+  });
+
+  options.series = series;
 
   return (
     <HighchartsReact
