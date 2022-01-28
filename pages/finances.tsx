@@ -160,7 +160,7 @@ type Props = {};
 const Finances = (props: Props) => {
   const chartComponentRef = React.useRef<HighchartsReact.RefObject>(null);
 
-  const convertMoneyToFloat = (money: string): number => {
+  const convertMoney = (money: string): number => {
     return Number(money.replace(/[^0-9.-]+/g, ''));
   };
 
@@ -176,7 +176,7 @@ const Finances = (props: Props) => {
   data.forEach(d => {
     Object.keys(d).forEach(k => {
       if (k !== 'Date' && k !== 'Total') {
-        formatted[k].push(convertMoneyToFloat(d[k]));
+        formatted[k].push(convertMoney(d[k]));
       }
     });
   });
