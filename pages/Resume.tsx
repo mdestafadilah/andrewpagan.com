@@ -88,7 +88,7 @@ const Skills = () => {
   );
 };
 
-const Resume = (): React.ReactNode => {
+const Resume = () => {
   return (
     <div className={styles.information}>
       <div className={styles['p-rel']}>

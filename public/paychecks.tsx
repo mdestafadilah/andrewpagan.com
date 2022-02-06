@@ -1,4 +1,5 @@
 type UnformattedPaycheck = {
+  [key: string]: string;
   date: string;
   taxes: string;
   benefits: string;
@@ -133,5 +134,7 @@ const formatData = (paychecks: Array<UnformattedPaycheck>): Array<Paycheck> => {
 
   return formatted;
 };
+
+export type { Paycheck };
 
 export default formatData(paychecks);

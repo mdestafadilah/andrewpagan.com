@@ -2,7 +2,7 @@ import React from 'react';
 import * as Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-import paychecks from '../public/paychecks';
+import paychecks, { Paycheck } from '../public/paychecks';
 
 const options: Highcharts.Options = {
   chart: {
@@ -64,7 +64,9 @@ const Finances = (props: Props) => {
 
   paychecks.forEach(p => {
     Object.keys(seperated).forEach(key => {
-      seperated[key].push(p[key]);
+      let k = key as keyof Paycheck;
+
+      seperated[key].push(p[k].toString());
     });
   });
 
