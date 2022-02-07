@@ -47,34 +47,38 @@ const MonthlyBreakdown: FC = (props: Props): ReactElement => {
         data: [
           {
             name: 'Total Investments',
+            color: '#006f3c',
             custom: {
               amount: 100,
             },
-            y: 62.74,
+            y: 36.4,
             drilldown: 'investments',
           },
           {
             name: 'Expenses',
+            color: '#f9a73e',
             custom: {
               amount: 100,
             },
-            y: 10.57,
+            y: 21,
             drilldown: 'expenses',
           },
           {
             name: 'Leftover',
+            color: '#264b96',
             custom: {
               amount: 100,
             },
-            y: 7.23,
+            y: 16.6,
             drilldown: 'leftover',
           },
           {
             name: 'Taxes',
+            color: '#bf212f',
             custom: {
               amount: 100,
             },
-            y: 5.58,
+            y: 26.8,
             drilldown: 'taxes',
           },
         ],
