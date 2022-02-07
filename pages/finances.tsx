@@ -2,7 +2,8 @@ import React from 'react';
 import * as Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-import paychecks, { Paycheck } from '../public/paychecks';
+import paychecks from '../public/paychecks';
+import MonthlyBreakdown from '../components/Layouts/finances/MonthlyBreakdown';
 
 const options: Highcharts.Options = {
   chart: {
@@ -92,12 +93,15 @@ const Finances: React.FC = (props: Props): React.ReactElement => {
   };
 
   return (
-    <HighchartsReact
-      highcharts={Highcharts}
-      options={options}
-      ref={chartComponentRef}
-      {...props}
-    />
+    <>
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options}
+        ref={chartComponentRef}
+        {...props}
+      />
+      <MonthlyBreakdown />
+    </>
   );
 };
 
