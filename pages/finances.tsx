@@ -46,7 +46,7 @@ const Finances: React.FC = (props: Props): React.ReactElement => {
     return month + '/' + day + '/' + year;
   };
 
-  const seperated: Record<string, Array<number>> = {
+  const seperated: Record<string, Array<number | string>> = {
     date: [],
     taxes: [],
     benefits: [],
@@ -64,9 +64,11 @@ const Finances: React.FC = (props: Props): React.ReactElement => {
 
   paychecks.forEach(p => {
     Object.keys(seperated).forEach(key => {
-      let k = key as keyof Paycheck;
-
-      seperated[key].push(parseInt(p[k].toString()));
+      if (key === 'date') {
+        seperated[key].push(p[key]);
+      } else {
+        seperated[key].push(parseInt(p[key].toString()));
+      }
     });
   });
 

@@ -15,6 +15,7 @@ type Paycheck = {
   retirement: number;
   takeHome: number;
   total: number;
+  [key: string]: string | number;
 };
 
 const paychecks: Array<UnformattedPaycheck> = [
