@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './Navigation.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const LOGO = '/images/AP.png';
 
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
-      <Link href="/">
-        <img
+      <Link passHref={true} href="/">
+        <Image
           className={styles.icon}
           src={LOGO}
           height="72"
