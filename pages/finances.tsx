@@ -31,7 +31,7 @@ const options: Highcharts.Options = {
 
 type Props = {};
 
-const Finances = (props: Props) => {
+const Finances: React.FC = (props: Props): React.ReactElement => {
   const chartComponentRef = React.useRef<HighchartsReact.RefObject>(null);
 
   const getFormattedDate = (date: Date): string => {
@@ -46,7 +46,7 @@ const Finances = (props: Props) => {
     return month + '/' + day + '/' + year;
   };
 
-  const seperated: Record<string, Array<string>> = {
+  const seperated: Record<string, Array<number>> = {
     date: [],
     taxes: [],
     benefits: [],
@@ -66,7 +66,7 @@ const Finances = (props: Props) => {
     Object.keys(seperated).forEach(key => {
       let k = key as keyof Paycheck;
 
-      seperated[key].push(p[k].toString());
+      seperated[key].push(parseInt(p[k].toString()));
     });
   });
 
