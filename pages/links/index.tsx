@@ -1,5 +1,5 @@
 import React from 'react';
-import { links } from './../../public/quick-link.json';
+import links from './../../public/quick-link';
 import styles from './links.module.scss';
 import Image from 'next/image';
 import {
@@ -54,13 +54,13 @@ const Links: React.FC = () => {
   return (
     <div className={styles.links}>
       <div className={styles['image-holder']}>
-        <Link href="/">
-          <img src={profileImage} />
+        <Link passHref={true} href="/">
+          <Image alt="Image of Andrew Pagan" src={profileImage} />
         </Link>
       </div>
       <ul>
-        {links.map(link => (
-          <ListItem url={link.url} name={link.name} />
+        {links.links.map((link, i) => (
+          <ListItem key={i} url={link.url} name={link.name} />
         ))}
       </ul>
     </div>

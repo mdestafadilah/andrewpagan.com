@@ -1,5 +1,6 @@
 import Axios from 'axios';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, FC, ReactElement } from 'react';
+import Image from 'next/image';
 import Head from 'next/head';
 
 const { NEXT_PUBLIC_GIPHY_API_KEY } = process.env;
@@ -22,7 +23,7 @@ interface GifState extends Array<Gif> {}
 
 interface GifState {}
 
-const fourOhFour = () => {
+const FourOhFour: FC = (): ReactElement => {
   const MAX_GIPHY_SEARCH = 4999;
 
   const [gifs, setGifs] = useState<GifState>([]);
@@ -56,15 +57,16 @@ const fourOhFour = () => {
 
   return (
     <>
-      <Head>
+      <Head key="404">
         <title>404 - you okay?</title>
       </Head>
 
       <div className={styles['gif-holder']}>
         {gifs.map(gif => (
-          <img
+          <Image
             key={gif.id}
             src={gif.images.downsized.url}
+            alt="404 Image"
             onClick={getRandomTrendingGIF}
           />
         ))}
@@ -73,4 +75,4 @@ const fourOhFour = () => {
   );
 };
 
-export default fourOhFour;
+export default FourOhFour;
