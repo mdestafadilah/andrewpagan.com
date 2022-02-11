@@ -32,12 +32,11 @@ const MonthlyBreakdown: FC = (props: Props): ReactElement => {
       },
     },
     tooltip: {
-      headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
       useHTML: true,
       formatter: function () {
         const { point } = this;
         console.log(point);
-        return `<span style="color:${point.color}">${point.name}</span>: <b>${point.y}</b> of total<br/><span>$${point.custom.amount}</span>`;
+        return `<span style="color:${point.color}">${point.name}</span>: <b>${point.y}%</b> of total<br/><span>$${point.custom.amount}</span>`;
       },
     },
     series: [
