@@ -20,7 +20,7 @@ const Navigation = () => {
       <ul>
         <li>
           <Link href="/blog">
-            <a className={styles['nav-link']}>Blog</a>
+            <a className={styles.navLink}>Blog</a>
           </Link>
         </li>
       </ul>

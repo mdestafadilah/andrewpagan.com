@@ -2,139 +2,63 @@
 
 .navigation {
   height: $navbar-height;
+  padding-top: 24px;
+  display: flex;
+  font-weight: $font-regular;
+  justify-content: space-between;
+
+  ul {
+    margin-top: 16px;
+
+    li {
+      display: inline-block;
+      font-size: 1.2rem;
+      .navLink {
+        color: $primary-grey;
+        text-decoration: none;
+
+        &:visited,
+        &:hover,
+        &:active {
+          color: $primary-grey;
+          text-decoration: none;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .icon {
+    margin-right: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (min-width: $desktop-break) {
   .navigation {
     width: 1017px;
     margin: 0 auto;
-    padding-top: 24px;
-    display: flex;
-    font-weight: $font-regular;
-    justify-content: space-between;
-
-    .icon {
-      margin-right: auto;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    ul {
-      margin-top: 16px;
-
-      li {
-        display: inline-block;
-        font-size: 1.2rem;
-
-        .nav-link {
-          color: $primary-grey;
-          text-decoration: none;
-
-          &:visited,
-          &:hover,
-          &:active {
-            color: $primary-grey;
-            text-decoration: none;
-          }
-        }
-
-        &:not(:last-child) {
-          margin-right: 24px;
-        }
-      }
-    }
   }
 }
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
   .navigation {
     margin: 0 122px;
-    padding-top: 24px;
-    display: flex;
-    font-weight: $font-regular;
-    justify-content: space-between;
-
-    .icon {
-      margin-right: auto;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    ul {
-      margin-top: 16px;
-
-      li {
-        display: inline-block;
-        font-size: 1.2rem;
-
-        .nav-link {
-          color: $primary-grey;
-          text-decoration: none;
-
-          &:visited,
-          &:hover,
-          &:active {
-            color: $primary-grey;
-            text-decoration: none;
-          }
-        }
-
-        &:not(:last-child) {
-          margin-right: 24px;
-        }
-
-        &:not(:last-child) {
-          margin-right: 24px;
-        }
-      }
-    }
   }
 }
 
 @media screen and (max-width: $mobile-break) {
   .navigation {
     margin: 0 12px;
-    padding-top: 24px;
-    display: flex;
-    font-weight: $font-regular;
-    justify-content: space-between;
-
-    .icon {
-      margin-right: auto;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
 
     ul {
-      margin-top: 16px;
       margin-right: 8px;
-
-      li {
-        display: inline-block;
-        font-size: 1.2rem;
-
-        .nav-link {
-          color: $primary-grey;
-          text-decoration: none;
-
-          &:visited,
-          &:hover,
-          &:active {
-            color: $primary-grey;
-            text-decoration: none;
-          }
-        }
-
-        &:not(:last-child) {
-          margin-right: 24px;
-        }
-      }
     }
   }
 }

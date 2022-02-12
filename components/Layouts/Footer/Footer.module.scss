@@ -8,17 +8,10 @@
   text-align: center;
 
   .details {
-    display: block;
-
     .name {
-      display: block;
       font-size: 1.5rem;
       font-weight: $font-semi-bold;
       margin-bottom: 5px;
-    }
-
-    .chat {
-      display: block;
     }
 
     .link {
