@@ -1,6 +1,6 @@
 import * as React from 'react';
-import TwoColumn from '../components/Layouts/TwoColumn/TwoColumn';
-import ResumeData from '../public/resume.json';
+import TwoColumn from '@components/Layouts/TwoColumn/TwoColumn';
+import ResumeData from '@public/resume.json';
 
 import styles from './Resume.module.scss';
 

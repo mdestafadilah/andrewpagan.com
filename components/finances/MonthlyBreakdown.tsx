@@ -35,7 +35,7 @@ const MonthlyBreakdown: FC = (props: Props): ReactElement => {
       useHTML: true,
       formatter: function () {
         const { point } = this;
-        console.log(point);
+
         // @ts-ignore
         return `<span style="color:${point.color}">${point.name}</span>: <b>${point.y}%</b> of total<br/><span>$${point.custom.amount}</span>`;
       },

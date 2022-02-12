@@ -2,8 +2,8 @@ import React from 'react';
 import * as Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-import paychecks from '../public/paychecks';
-import MonthlyBreakdown from '../components/finances/MonthlyBreakdown';
+import paychecks from '@public/paychecks';
+import MonthlyBreakdown from '@components/finances/MonthlyBreakdown';
 
 const options: Highcharts.Options = {
   chart: {
