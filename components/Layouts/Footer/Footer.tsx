@@ -1,29 +1,24 @@
 import styles from './Footer.module.scss';
-import socialMedia from '../../../public/social-media.json';
-import { FaGithubSquare } from 'react-icons/fa';
-import { SiLinkedin, SiLeetcode } from 'react-icons/si';
-import { GrStackOverflow } from 'react-icons/gr';
-import { ImSoundcloud2 } from 'react-icons/im';
-import React, { ReactElement } from 'react';
+import socialMedia from '@public/social-media.json';
 
-interface ListItemProp {
+type ListItemProp = {
   url: string;
   name: string;
-}
+};
 
 const ListItem = ({ url, name }: ListItemProp) => {
   const iconPicker = () => {
     switch (name) {
       case 'Github':
-        return <FaGithubSquare />;
+        return <i className="fa-brands fa-github-square"></i>;
       case 'LinkedIn':
-        return <SiLinkedin />;
+        return <i className="fa-brands fa-linkedin"></i>;
       case 'Leetcode':
-        return <SiLeetcode />;
+        return <i className="fa-solid fa-code"></i>;
       case 'StackOverflow':
-        return <GrStackOverflow />;
+        return <i className="fa-brands fa-stack-overflow"></i>;
       case 'SoundCloud':
-        return <ImSoundcloud2 />;
+        return <i className="fa-brands fa-soundcloud"></i>;
     }
   };
 
@@ -54,11 +49,11 @@ const Footer = () => {
           </span>
         </div>
         <div className={styles.copyright}>
-          <span>©2021 Andrew Pagan</span>
+          <span>©2022 Andrew Pagan</span>
         </div>
       </div>
-      <div className={styles['social-media-links']}>
-        <ul className={styles['link-holder']}>
+      <div className={styles.socialMediaLinks}>
+        <ul className={styles.linkHolder}>
           {socialMedia['social-media'].map(media => (
             <ListItem
               key={media.name}
