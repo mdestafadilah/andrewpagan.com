@@ -1,66 +1,69 @@
 @import '../variables';
 
-@media screen and (min-width: $desktop-break) {
-  .information {
-    width: 1017px;
-    margin: 0 auto;
+.information {
+  .p-rel {
+    position: relative;
+  }
 
-    .p-rel {
-      position: relative;
+  .experience {
+    &:not(:first-child) {
+      margin-top: 16px;
     }
+  }
 
-    .experience {
+  .border-bottom {
+    margin-bottom: 32px;
+  }
+
+  .section-info {
+    width: 79%;
+    display: inline-block;
+    .section-info-header {
+      display: inline-block;
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: $font-semi-bold;
+      }
+
+      h4 {
+        color: $subtle-grey;
+        font-size: 1rem;
+        font-weight: $font-semi-bold;
+      }
+
       &:not(:first-child) {
         margin-top: 16px;
       }
     }
 
-    .border-bottom {
-      margin-bottom: 32px;
+    .section-info-dates {
+      float: right;
+      font-size: 1rem;
+      display: inline-block;
     }
 
-    .section-info {
-      width: 79%;
-      display: inline-block;
+    .section-info-points {
+      margin-top: 16px;
+      margin-left: 16px;
 
-      .section-info-header {
+      li {
+        line-height: 1.41;
+
         &:not(:first-child) {
-          margin-top: 16px;
-        }
-
-        display: inline-block;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: $font-semi-bold;
-        }
-
-        h4 {
-          color: $subtle-grey;
-          font-size: 1rem;
-          font-weight: $font-semi-bold;
+          margin-top: 3px;
         }
       }
+    }
+  }
+}
 
-      .section-info-dates {
-        float: right;
-        font-size: 1rem;
-        display: inline-block;
-      }
+@media screen and (min-width: $desktop-break) {
+  .information {
+    width: 1017px;
+    margin: 0 auto;
 
-      .section-info-points {
-        margin-top: 16px;
-        margin-left: 16px;
-
-        .info {
-          line-height: 1.41;
-
-          &:not(:first-child) {
-            margin-top: 3px;
-          }
-        }
-      }
-
+    .section-info {
       .overview-container {
         display: inline-block;
         width: 20%;
@@ -99,62 +102,7 @@
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
   .information {
-    .p-rel {
-      position: relative;
-    }
-
-    .experience {
-      &:not(:first-child) {
-        margin-top: 16px;
-      }
-    }
-
-    .border-bottom {
-      margin-bottom: 32px;
-    }
-
     .section-info {
-      width: 79%;
-      display: inline-block;
-
-      .section-info-header {
-        &:not(:first-child) {
-          margin-top: 16px;
-        }
-
-        display: inline-block;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: $font-semi-bold;
-        }
-
-        h4 {
-          color: $subtle-grey;
-          font-size: 1rem;
-          font-weight: $font-semi-bold;
-        }
-      }
-
-      .section-info-dates {
-        font-size: 1rem;
-        float: right;
-        display: inline-block;
-      }
-
-      .section-info-points {
-        margin-top: 16px;
-        margin-left: 16px;
-
-        li {
-          line-height: 1.41;
-
-          &:not(:first-child) {
-            margin-top: 3px;
-          }
-        }
-      }
-
       .overview-container {
         display: inline-block;
         float: left;
@@ -197,57 +145,13 @@
   .information {
     margin: 0 12px;
 
-    .p-rel {
-      position: relative;
-    }
-
-    .experience {
-      &:not(:first-child) {
-        margin-top: 16px;
-      }
-    }
-
-    .border-bottom {
-      margin-bottom: 32px;
-    }
-
     .section-info {
-      .section-info-header {
-        &:not(:first-child) {
-          margin-top: 16px;
-        }
-
-        display: inline-block;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: $font-semi-bold;
-        }
-
-        h4 {
-          color: $subtle-grey;
-          font-size: 1rem;
-          font-weight: $font-semi-bold;
-        }
-      }
+      display: block;
 
       .section-info-dates {
+        display: block;
         font-size: 1rem;
         margin-top: 4px;
-        display: block;
-      }
-
-      .section-info-points {
-        margin-top: 16px;
-        margin-left: 16px;
-
-        li {
-          line-height: 1.41;
-
-          &:not(:first-child) {
-            margin-top: 3px;
-          }
-        }
       }
 
       .overview-container {
