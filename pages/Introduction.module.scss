@@ -38,20 +38,24 @@
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
   .header {
+    width: auto;
     margin: 108px 0px;
   }
 
   .about-me {
+    width: auto;
     margin-bottom: 32px;
   }
 }
 
 @media screen and (max-width: $mobile-break) {
   .header {
+    width: auto;
     margin: 108px 12px;
   }
 
   .about-me {
+    width: auto;
     margin: 0 12px 32px 12px;
   }
 }
