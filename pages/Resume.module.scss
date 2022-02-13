@@ -20,9 +20,22 @@
     display: inline-block;
 
     .overview-container {
+      display: inline-block;
+
       .overview-header {
         font-size: 1.2rem;
         margin-bottom: 3px;
+      }
+
+      ul {
+        list-style: none;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+
+        li {
+          width: 50%;
+        }
       }
 
       &:not(:last-child) {
@@ -85,19 +98,7 @@
 
     .section-info {
       .overview-container {
-        display: inline-block;
         width: 20%;
-
-        ul {
-          list-style: none;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-
-          li {
-            width: 50%;
-          }
-        }
       }
     }
   }
@@ -107,20 +108,10 @@
   .information {
     .section-info {
       .overview-container {
-        display: inline-block;
-        float: left;
         width: 180px;
 
         ul {
           width: 180px;
-          list-style: none;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-
-          li {
-            width: 50%;
-          }
         }
       }
     }
@@ -146,14 +137,6 @@
 
         ul {
           width: 180px;
-          list-style: none;
-          columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-
-          li {
-            width: 50%;
-          }
         }
 
         &:not(:last-child) {
