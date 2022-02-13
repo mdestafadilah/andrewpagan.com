@@ -2,13 +2,6 @@ import React from 'react';
 import links from './../../public/quick-link';
 import styles from './links.module.scss';
 import Image from 'next/image';
-import {
-  ImInstagram,
-  ImSoundcloud2,
-  ImTwitch,
-  ImTwitter,
-  ImYoutube,
-} from 'react-icons/im';
 import Link from 'next/link';
 
 const profileImage = '/images/square-professional-photo.png';
@@ -28,15 +21,15 @@ const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
   const iconPicker = () => {
     switch (source) {
       case 'SoundCloud':
-        return <ImSoundcloud2 />;
+        return <i className="fa-brands fa-soundcloud"></i>;
       case 'Instagram':
-        return <ImInstagram />;
+        return <i className="fa-brands fa-instagram"></i>;
       case 'Twitter':
-        return <ImTwitter />;
+        return <i className="fa-brands fa-twitter"></i>;
       case 'Youtube':
-        return <ImYoutube />;
+        return <i className="fa-brands fa-youtube"></i>;
       case 'Twitch':
-        return <ImTwitch />;
+        return <i className="fa-brands fa-twitch"></i>;
     }
   };
 

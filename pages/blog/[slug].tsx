@@ -18,7 +18,6 @@ import {
 import styles from './[slug].module.scss';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
 import TwoColumn from '../../components/Layouts/TwoColumn/TwoColumn';
-import { IoReturnDownForwardSharp } from 'react-icons/io5';
 
 const components = {
   a: CustomLink,
@@ -58,7 +57,8 @@ const BlogInformation: React.FC<BlogInformationProps> = ({ frontMatter }) => {
       </Link>
 
       <p className={styles.title}>
-        <IoReturnDownForwardSharp /> {frontMatter.title}
+        <i className="fa-solid fa-arrow-turn-down-right"></i>
+        {frontMatter.title}
       </p>
       <p className={styles.date}>{createdDate}</p>
     </>
