@@ -7,7 +7,7 @@ const Introduction = () => {
         <h1>Hello, I'm Andrew.</h1>
         <h1>Thanks for dropping by.</h1>
       </div>
-      <div className={styles['about-me']}>
+      <div className={styles.aboutMe}>
         <h2>About</h2>
         <p>
           Hey there! I'm Andrew Pagan. A fluffy cat owner and active financial

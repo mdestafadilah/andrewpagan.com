@@ -71,13 +71,13 @@ const BlogPost: React.FC<BlogPostProps> = ({ source, frontMatter }) => {
   const content = hydrate(source, { components });
 
   return (
-    <div className={styles['blog-post']}>
+    <div className={styles.blogPost}>
       <Head>
         <title>{frontMatter.title}</title>
       </Head>
       <TwoColumn
         leftColumn={<BlogInformation frontMatter={frontMatter} />}
-        rightColumn={<main className={styles['section-info']}>{content}</main>}
+        rightColumn={<main className={styles.sectionInfo}>{content}</main>}
       />
     </div>
   );

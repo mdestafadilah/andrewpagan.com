@@ -13,29 +13,29 @@ interface ChildrenProps {
 const CustomLink = ({ as, href, ...otherProps }: CustomLinkProps) => {
   return (
     <Link as={as} href={href}>
-      <a className={styles['custom-link']} {...otherProps} />
+      <a className={styles.customLink} {...otherProps} />
     </Link>
   );
 };
 
 const CustomH1 = ({ children }: ChildrenProps) => {
-  return <h1 className={styles['custom-h1']}>{children}</h1>;
+  return <h1 className={styles.customH1}>{children}</h1>;
 };
 
 const CustomH2 = ({ children }: ChildrenProps) => {
-  return <h2 className={styles['custom-h2']}>{children}</h2>;
+  return <h2 className={styles.customH2}>{children}</h2>;
 };
 
 const CustomP = ({ children }: ChildrenProps) => {
-  return <p className={styles['custom-p']}>{children}</p>;
+  return <p className={styles.customP}>{children}</p>;
 };
 
 const CustomStrong = ({ children }: ChildrenProps) => {
-  return <span className={styles['custom-strong']}>{children}</span>;
+  return <span className={styles.customStrong}>{children}</span>;
 };
 
 const CustomUl = ({ children }: ChildrenProps) => {
-  return <ul className={styles['custom-ul']}>{children}</ul>;
+  return <ul className={styles.customUl}>{children}</ul>;
 };
 
 export { CustomLink, CustomH1, CustomH2, CustomP, CustomStrong, CustomUl };

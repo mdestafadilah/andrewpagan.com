@@ -1,11 +1,11 @@
 @import '@variables';
 
-.custom-link {
+.customLink {
   color: $accent-color;
   text-decoration: none;
 }
 
-.custom-h1 {
+.customH1 {
   color: $primary-grey;
   font-weight: $font-light;
   font-size: 2.2rem;
@@ -13,7 +13,7 @@
   line-height: 1.25;
 }
 
-.custom-h2 {
+.customH2 {
   color: $primary-grey;
   font-weight: $font-bold;
   font-size: 1.8rem;
@@ -22,7 +22,7 @@
   padding-top: 30px;
 }
 
-.custom-h3 {
+.customH3 {
   color: $primary-grey;
   font-weight: $font-semi-bold;
   font-size: 1.6rem;
@@ -30,7 +30,7 @@
   line-height: 1.25;
 }
 
-.custom-h4 {
+.customH4 {
   color: $primary-grey;
   font-weight: $font-semi-bold;
   font-size: 1.4rem;
@@ -38,7 +38,7 @@
   line-height: 1.25;
 }
 
-.custom-h5 {
+.customH5 {
   color: $primary-grey;
   font-weight: $font-semi-bold;
   font-size: 1.2rem;
@@ -46,7 +46,7 @@
   line-height: 1.25;
 }
 
-.custom-p {
+.customP {
   color: $primary-grey;
   padding-bottom: 8px;
   line-height: 1.5;
@@ -54,17 +54,17 @@
   font-weight: normal;
 }
 
-.custom-caption {
+.customCaption {
   font-size: 0.8rem;
   line-height: 1.5;
   font-weight: normal;
 }
 
-.custom-strong {
+.customStrong {
   font-weight: $font-bold;
 }
 
-.custom-ul {
+.customUl {
   padding-left: 20px;
   margin-bottom: 8px;
 }

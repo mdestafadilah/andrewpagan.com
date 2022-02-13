@@ -1,4 +1,4 @@
-@import './../../variables';
+@import '@variables';
 
 .links {
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
   min-height: 100vh;
 
-  .image-holder {
+  .imageHolder {
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -31,38 +31,28 @@
       background: white;
       cursor: pointer;
 
-      svg {
+      i {
         margin-right: 8px;
       }
 
-      &.Twitter {
-        svg {
-          color: #55acee;
-        }
+      .fa-twitter {
+        color: #55acee;
       }
 
-      &.SoundCloud {
-        svg {
-          color: #ff7700;
-        }
+      .fa-soundcloud {
+        color: #ff7700;
       }
 
-      &.Instagram {
-        svg {
-          color: #c13584;
-        }
+      .fa-instagram {
+        color: #c13584;
       }
 
-      &.Youtube {
-        svg {
-          color: #ff0000;
-        }
+      .fa-youtube {
+        color: #ff0000;
       }
 
-      &.Twitch {
-        svg {
-          color: #6441a5;
-        }
+      .fa-twitch {
+        color: #6441a5;
       }
 
       &:not(:last-child) {

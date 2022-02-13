@@ -35,7 +35,7 @@ const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
 
   return (
     <li
-      className={styles[source]}
+      className={styles.source}
       key={url}
       onClick={() => openLinkInNewTab(url)}>
       {iconPicker()} {name}
@@ -46,9 +46,14 @@ const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
 const Links: React.FC = () => {
   return (
     <div className={styles.links}>
-      <div className={styles['image-holder']}>
+      <div className={styles.imageHolder}>
         <Link passHref={true} href="/">
-          <Image alt="Image of Andrew Pagan" src={profileImage} />
+          <Image
+            alt="Image of Andrew Pagan"
+            width={150}
+            height={150}
+            src={profileImage}
+          />
         </Link>
       </div>
       <ul>

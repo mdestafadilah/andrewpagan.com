@@ -61,7 +61,7 @@ const FourOhFour: FC = (): ReactElement => {
         <title>404 - you okay?</title>
       </Head>
 
-      <div className={styles['gif-holder']}>
+      <div className={styles.gifHolder}>
         {gifs.map(gif => (
           <Image
             key={gif.id}
