@@ -21,15 +21,29 @@ const ListItem: React.FC<ListItemProp> = ({ url, name }) => {
   const iconPicker = () => {
     switch (source) {
       case 'SoundCloud':
-        return <i className="fa-brands fa-soundcloud"></i>;
+        return (
+          <i
+            className="fa-brands fa-soundcloud"
+            style={{ color: '#ff7700' }}></i>
+        );
       case 'Instagram':
-        return <i className="fa-brands fa-instagram"></i>;
+        return (
+          <i
+            className="fa-brands fa-instagram"
+            style={{ color: '#c13584' }}></i>
+        );
       case 'Twitter':
-        return <i className="fa-brands fa-twitter"></i>;
+        return (
+          <i className="fa-brands fa-twitter" style={{ color: '#55acee' }}></i>
+        );
       case 'Youtube':
-        return <i className="fa-brands fa-youtube"></i>;
+        return (
+          <i className="fa-brands fa-youtube" style={{ color: '#ff0000' }}></i>
+        );
       case 'Twitch':
-        return <i className="fa-brands fa-twitch"></i>;
+        return (
+          <i className="fa-brands fa-twitch" style={{ color: '#6441a5' }}></i>
+        );
     }
   };
 
