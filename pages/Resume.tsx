@@ -17,13 +17,15 @@ interface EducationProps {
 
 const Education = ({ education }: EducationProps) => {
   return (
-    <div className={styles['section-info']}>
-      <div className={styles['section-info-header']}>
-        <h3>{education.degree}</h3>
-        <h4>{education.college}</h4>
-      </div>
-      <div className={styles['section-info-dates']}>
-        {education.startDate} - {education.endDate}
+    <div className={styles.sectionInfo}>
+      <div className={styles.sectionInfoHeader}>
+        <span>
+          <h3>{education.degree}</h3>
+          <h4>{education.college}</h4>
+        </span>
+        <span className={styles.sectionInfoDates}>
+          {education.startDate} - {education.endDate}
+        </span>
       </div>
     </div>
   );
@@ -43,15 +45,17 @@ interface ExperienceProps {
 
 const Experience = ({ experience }: ExperienceProps) => {
   return (
-    <div className={`${styles['section-info']} ${styles.experience}`}>
-      <div className={styles['section-info-header']}>
-        <h3 className={styles.company}>{experience.company}</h3>
-        <h4 className={styles.title}>{experience.title}</h4>
+    <div className={`${styles.sectionInfo} ${styles.experience}`}>
+      <div className={styles.sectionInfoHeader}>
+        <span>
+          <h3 className={styles.company}>{experience.company}</h3>
+          <h4 className={styles.title}>{experience.title}</h4>
+        </span>
+        <span className={styles.sectionInfoDates}>
+          {experience.startDate} - {experience.endDate}
+        </span>
       </div>
-      <div className={styles['section-info-dates']}>
-        {experience.startDate} - {experience.endDate}
-      </div>
-      <ul className={styles['section-info-points']}>
+      <ul className={styles.sectionInfoPoints}>
         {experience.responsibilities.map((point, index) => (
           <li className={styles.info} key={index}>
             {point}
@@ -64,9 +68,9 @@ const Experience = ({ experience }: ExperienceProps) => {
 
 const Skills = () => {
   return (
-    <div className={styles['section-info']}>
-      <div className={styles['overview-container']}>
-        <h3 className={styles['overview-header']}>Languages</h3>
+    <div className={styles.sectionInfo}>
+      <div className={styles.overviewContainer}>
+        <h3 className={styles.overviewHeader}>Languages</h3>
         <ul>
           <li>React</li>
           <li>Redux</li>
@@ -76,8 +80,8 @@ const Skills = () => {
           <li>Python</li>
         </ul>
       </div>
-      <div className={styles['overview-container']}>
-        <h3 className={styles['overview-header']}>Tools</h3>
+      <div className={styles.overviewContainer}>
+        <h3 className={styles.overviewHeader}>Tools</h3>
         <ul>
           <li>Bootstrap</li>
           <li>Tableau</li>
@@ -91,11 +95,11 @@ const Skills = () => {
 const Resume = () => {
   return (
     <div className={styles.information}>
-      <div className={styles['p-rel']}>
-        <div className={styles['vertical-line']}></div>
+      <div className={styles.pRel}>
+        <div className={styles.verticalLine}></div>
 
         <TwoColumn
-          className={styles['border-bottom']}
+          className={styles.borderBottom}
           leftColumn={<span>Experience</span>}
           rightColumn={ResumeData.experience.map((job, index) => (
             <Experience key={index} experience={job}></Experience>
@@ -103,13 +107,13 @@ const Resume = () => {
         />
 
         <TwoColumn
-          className={styles['border-bottom']}
+          className={styles.borderBottom}
           leftColumn={<span>Education</span>}
           rightColumn={<Education education={ResumeData.education}></Education>}
         />
 
         <TwoColumn
-          className={styles['border-bottom']}
+          className={styles.borderBottom}
           leftColumn={<span>Skills</span>}
           rightColumn={<Skills />}
         />
