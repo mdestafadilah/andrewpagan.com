@@ -130,6 +130,12 @@
       width: auto;
       display: block;
 
+      .sectionInfoHeader {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
       .sectionInfoDates {
         display: block;
         font-size: 1rem;

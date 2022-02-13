@@ -31,17 +31,17 @@ const Education = ({ education }: EducationProps) => {
   );
 };
 
-interface Experience {
+type Experience = {
   company: string;
   title: string;
   startDate: string;
   endDate: string;
   responsibilities: string[];
-}
+};
 
-interface ExperienceProps {
+type ExperienceProps = {
   experience: Experience;
-}
+};
 
 const Experience = ({ experience }: ExperienceProps) => {
   return (
@@ -66,7 +66,7 @@ const Experience = ({ experience }: ExperienceProps) => {
   );
 };
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
     <div className={styles.sectionInfo}>
       <div className={styles.overviewContainer}>
