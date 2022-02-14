@@ -1,7 +1,7 @@
 @import '@variables';
 
 .header {
-  width: 1017px;
+  // width: 1000px;
   margin: 108px auto;
 
   h1 {
@@ -10,7 +10,7 @@
 }
 
 .aboutMe {
-  width: 1017px;
+  // width: 1000px;
   margin: 0 auto 32px auto;
 
   h2 {
@@ -26,12 +26,12 @@
 
 @media screen and (min-width: $desktop-break) {
   .header {
-    width: 1017px;
+    // width: 1000px;
     margin: 108px auto;
   }
 
   .aboutMe {
-    width: 1017px;
+    // width: 1000px;
     margin: 0 auto 32px auto;
   }
 }

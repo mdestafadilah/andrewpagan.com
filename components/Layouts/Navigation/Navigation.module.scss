@@ -1,11 +1,12 @@
 @import '@variables';
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
+
   height: $navbar-height;
   padding-top: 24px;
-  display: flex;
   font-weight: $font-regular;
-  justify-content: space-between;
 
   ul {
     margin-top: 16px;
@@ -43,7 +44,7 @@
 @media screen and (min-width: $desktop-break) {
   .navigation {
     margin: 0 auto;
-    width: 1017px;
+    width: 1000px;
   }
 }
 

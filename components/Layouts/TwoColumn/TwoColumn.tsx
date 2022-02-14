@@ -8,8 +8,10 @@ type TwoColumnProps = {
 };
 
 const TwoColumn = ({ leftColumn, rightColumn, className }: TwoColumnProps) => {
+  const classNames = className + ' ' + styles.grid;
+
   return (
-    <div className={className}>
+    <div className={classNames}>
       <div className={styles.leftColumn}>{leftColumn}</div>
       <div className={styles.rightColumn}>{rightColumn}</div>
     </div>

@@ -1,16 +1,20 @@
 @import '@variables';
 
 @media screen and (min-width: $mobile-break) {
-  .leftColumn {
-    width: 20%;
-    display: inline-block;
-    font-size: 1.2rem;
-    vertical-align: top;
-  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 
-  .rightColumn {
-    width: 79%;
-    display: inline-block;
+    .leftColumn {
+      font-size: 1.2rem;
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .rightColumn {
+      grid-row: 1;
+      grid-column: 2/4;
+    }
   }
 }
 
